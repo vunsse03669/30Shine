@@ -15,6 +15,7 @@ class MenuCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         lblTitle.sizeToFit()
+        lblTitle.numberOfLines = 0
         imvMenu.layer.cornerRadius = 13.0
         self.imvMenu.clipsToBounds = true
     }
