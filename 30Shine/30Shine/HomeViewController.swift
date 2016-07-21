@@ -78,7 +78,10 @@ class HomeViewController: UIViewController {
             default:
                 print("xxx")
             }
-            self.navigationController?.pushViewController(vc, animated: true)
+            if vc != nil {
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
         }
     }
     

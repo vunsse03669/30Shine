@@ -9,11 +9,15 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import MediaPlayer
+import youtube_parser
 
 class VideoViewController: UIViewController {
     
     @IBOutlet weak var tbvVideo: UITableView!
     @IBOutlet weak var btnHome: UIButton!
+    
+    var moviePlayer : MPMoviePlayerController!
     
     var videoVariable : Variable<[Video]> = Variable([])
     
@@ -21,6 +25,7 @@ class VideoViewController: UIViewController {
         super.viewDidLoad()
         self.initData()
         self.configUI()
+
         //back to home
         self.configTableView()
         _ = btnHome.rx_tap.subscribeNext {
@@ -47,7 +52,9 @@ class VideoViewController: UIViewController {
         
         _ = self.tbvVideo.rx_itemSelected.subscribeNext {
             indexPath in
-            
+            self.tbvVideo.deselectRowAtIndexPath(indexPath, animated: false)
+            let url = self.videoVariable.value[indexPath.row].thumnailUrl
+            self.playVideo(url)
         }
     }
     
@@ -64,6 +71,42 @@ class VideoViewController: UIViewController {
         let id = url.stringByReplacingOccurrencesOfString(str, withString: "")
         return urlStr.stringByReplacingOccurrencesOfString("MASK_ID", withString: id)
     }
+    
+    func playVideo(url : String) {
+        self.moviePlayer = MPMoviePlayerController()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(VideoViewController.doneButtonClick(_:)), name: MPMoviePlayerWillExitFullscreenNotification, object: self.moviePlayer)
+        
+        self.view.layoutIfNeeded()
+        self.moviePlayer.view.frame = self.view.frame
+        self.moviePlayer.view.center = self.view.center
+        self.view.addSubview(self.moviePlayer.view)
+        self.moviePlayer.fullscreen = true
+        let youtubeURL = NSURL(string: url)!
+        self.playVideoWithYoutubeURL(youtubeURL)
+
+    }
+    
+    func playVideoWithYoutubeURL(url: NSURL) {
+        Youtube.h264videosWithYoutubeURL(url, completion: { (videoInfo, error) -> Void in
+            if let
+                videoURLString = videoInfo?["url"] as? String,
+                _ = videoInfo?["title"] as? String {
+                self.moviePlayer.contentURL = NSURL(string: videoURLString)
+            }
+        })
+    }
+    
+    func doneButtonClick(sender:NSNotification?){
+    
+        let value = UIInterfaceOrientation.Portrait.rawValue
+        UIDevice.currentDevice().setValue(value, forKey: "orientation")
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: MPMoviePlayerWillExitFullscreenNotification, object: nil)
+        self.moviePlayer.stop()
+        self.moviePlayer.view.removeFromSuperview()
+        self.moviePlayer = nil
+      
+    }
+
 
     //MARK:Dump data
     func initData() {
