@@ -15,6 +15,14 @@
 		99BE9DF11D40845B00429478 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BE9DF01D40845B00429478 /* MenuCell.swift */; };
 		99BE9DF31D4084F700429478 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BE9DF21D4084F700429478 /* Menu.swift */; };
 		DBEADA86A5D072CA63EE3FD1 /* Pods_30Shine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838FF4F4FB476EEA698D3134 /* Pods_30Shine.framework */; };
+		E81016EE1D40F83F00600613 /* ChainSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */; };
+		E81016F01D40F85C00600613 /* UTM Alexander.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81016EF1D40F85C00600613 /* UTM Alexander.ttf */; };
+		E81016F21D410F3600600613 /* SalonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81016F11D410F3600600613 /* SalonCell.swift */; };
+		E81016F41D410FF300600613 /* Salon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81016F31D410FF300600613 /* Salon.swift */; };
+		E81016F61D41127700600613 /* ListSalonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81016F51D41127700600613 /* ListSalonView.swift */; };
+		E81016F81D41129200600613 /* ListSalonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E81016F71D41129200600613 /* ListSalonView.xib */; };
+		E81016FB1D41132A00600613 /* SalonTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81016F91D41132A00600613 /* SalonTableCell.swift */; };
+		E81016FC1D41132A00600613 /* SalonTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E81016FA1D41132A00600613 /* SalonTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,14 @@
 		99BE9DEE1D40799700429478 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		99BE9DF01D40845B00429478 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		99BE9DF21D4084F700429478 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainSystemViewController.swift; sourceTree = "<group>"; };
+		E81016EF1D40F85C00600613 /* UTM Alexander.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UTM Alexander.ttf"; path = "30Shine/UTM Alexander.ttf"; sourceTree = "<group>"; };
+		E81016F11D410F3600600613 /* SalonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonCell.swift; sourceTree = "<group>"; };
+		E81016F31D410FF300600613 /* Salon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Salon.swift; sourceTree = "<group>"; };
+		E81016F51D41127700600613 /* ListSalonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSalonView.swift; sourceTree = "<group>"; };
+		E81016F71D41129200600613 /* ListSalonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListSalonView.xib; sourceTree = "<group>"; };
+		E81016F91D41132A00600613 /* SalonTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonTableCell.swift; sourceTree = "<group>"; };
+		E81016FA1D41132A00600613 /* SalonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalonTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		99BE9DCC1D40760D00429478 = {
 			isa = PBXGroup;
 			children = (
+				E81016EF1D40F85C00600613 /* UTM Alexander.ttf */,
 				99BE9DD71D40760D00429478 /* 30Shine */,
 				99BE9DD61D40760D00429478 /* Products */,
 				31D612DF400ECA1FAB23B9B1 /* Pods */,
@@ -87,6 +104,7 @@
 		99BE9DEA1D40783700429478 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */,
 				99BE9DEE1D40799700429478 /* HomeViewController.swift */,
 			);
 			name = Controller;
@@ -99,6 +117,11 @@
 				99BE9DDC1D40760D00429478 /* Main.storyboard */,
 				99BE9DE11D40760D00429478 /* LaunchScreen.storyboard */,
 				99BE9DF01D40845B00429478 /* MenuCell.swift */,
+				E81016F11D410F3600600613 /* SalonCell.swift */,
+				E81016F51D41127700600613 /* ListSalonView.swift */,
+				E81016F71D41129200600613 /* ListSalonView.xib */,
+				E81016F91D41132A00600613 /* SalonTableCell.swift */,
+				E81016FA1D41132A00600613 /* SalonTableCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -107,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				99BE9DF21D4084F700429478 /* Menu.swift */,
+				E81016F31D410FF300600613 /* Salon.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -188,6 +212,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81016F81D41129200600613 /* ListSalonView.xib in Resources */,
+				E81016F01D40F85C00600613 /* UTM Alexander.ttf in Resources */,
+				E81016FC1D41132A00600613 /* SalonTableCell.xib in Resources */,
 				99BE9DE31D40760D00429478 /* LaunchScreen.storyboard in Resources */,
 				99BE9DE01D40760D00429478 /* Assets.xcassets in Resources */,
 				99BE9DDE1D40760D00429478 /* Main.storyboard in Resources */,
@@ -249,9 +276,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81016F41D410FF300600613 /* Salon.swift in Sources */,
 				99BE9DD91D40760D00429478 /* AppDelegate.swift in Sources */,
+				E81016F61D41127700600613 /* ListSalonView.swift in Sources */,
+				E81016FB1D41132A00600613 /* SalonTableCell.swift in Sources */,
 				99BE9DEF1D40799700429478 /* HomeViewController.swift in Sources */,
 				99BE9DF31D4084F700429478 /* Menu.swift in Sources */,
+				E81016F21D410F3600600613 /* SalonCell.swift in Sources */,
+				E81016EE1D40F83F00600613 /* ChainSystemViewController.swift in Sources */,
 				99BE9DF11D40845B00429478 /* MenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
