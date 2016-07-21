@@ -9,7 +9,7 @@ pod 'RxCocoa'
 pod 'Alamofire'
 pod 'RealmSwift'
 pod 'Reachability'
-
+pod 'NPSegmentedControl'
 
 end
 
