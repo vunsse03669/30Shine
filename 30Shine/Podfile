@@ -8,8 +8,9 @@ pod 'RxSwift'
 pod 'RxCocoa'
 pod 'Alamofire'
 pod 'RealmSwift'
-pod 'Reachability'
+pod 'ReachabilitySwift'
 pod 'NPSegmentedControl'
+pod 'youtube-parser'
 
 end
 

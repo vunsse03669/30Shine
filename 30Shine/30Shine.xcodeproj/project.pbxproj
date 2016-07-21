@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		999698E11D40D9DA0021184E /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999698E01D40D9DA0021184E /* VideoViewController.swift */; };
+		999698E51D40DEAA0021184E /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999698E41D40DEAA0021184E /* VideoCell.swift */; };
+		999698E71D40DF9B0021184E /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999698E61D40DF9B0021184E /* Video.swift */; };
+		999698EB1D40E1B30021184E /* LazyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999698EA1D40E1B30021184E /* LazyImage.swift */; };
 		99BE9DD91D40760D00429478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BE9DD81D40760D00429478 /* AppDelegate.swift */; };
 		99BE9DDE1D40760D00429478 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BE9DDC1D40760D00429478 /* Main.storyboard */; };
 		99BE9DE01D40760D00429478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BE9DDF1D40760D00429478 /* Assets.xcassets */; };
@@ -29,6 +33,10 @@
 		17FAE5D677117CFA7E43D718 /* Pods-30Shine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30Shine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-30Shine/Pods-30Shine.debug.xcconfig"; sourceTree = "<group>"; };
 		540C3FE2B4771421D2E71F1C /* Pods-30Shine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30Shine.release.xcconfig"; path = "Pods/Target Support Files/Pods-30Shine/Pods-30Shine.release.xcconfig"; sourceTree = "<group>"; };
 		838FF4F4FB476EEA698D3134 /* Pods_30Shine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_30Shine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		999698E01D40D9DA0021184E /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		999698E41D40DEAA0021184E /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		999698E61D40DF9B0021184E /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		999698EA1D40E1B30021184E /* LazyImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyImage.swift; sourceTree = "<group>"; };
 		99BE9DD51D40760D00429478 /* 30Shine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 30Shine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BE9DD81D40760D00429478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99BE9DDD1D40760D00429478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +77,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		999698E81D40E19F0021184E /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Apple;
+			sourceTree = "<group>";
+		};
+		999698E91D40E1A40021184E /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				999698EA1D40E1B30021184E /* LazyImage.swift */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
 		99BE9DCC1D40760D00429478 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +129,7 @@
 			children = (
 				E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */,
 				99BE9DEE1D40799700429478 /* HomeViewController.swift */,
+				999698E01D40D9DA0021184E /* VideoViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -117,6 +141,7 @@
 				99BE9DDC1D40760D00429478 /* Main.storyboard */,
 				99BE9DE11D40760D00429478 /* LaunchScreen.storyboard */,
 				99BE9DF01D40845B00429478 /* MenuCell.swift */,
+				999698E41D40DEAA0021184E /* VideoCell.swift */,
 				E81016F11D410F3600600613 /* SalonCell.swift */,
 				E81016F51D41127700600613 /* ListSalonView.swift */,
 				E81016F71D41129200600613 /* ListSalonView.xib */,
@@ -131,6 +156,7 @@
 			children = (
 				99BE9DF21D4084F700429478 /* Menu.swift */,
 				E81016F31D410FF300600613 /* Salon.swift */,
+				999698E61D40DF9B0021184E /* Video.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -138,6 +164,8 @@
 		99BE9DED1D40785500429478 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				999698E81D40E19F0021184E /* Apple */,
+				999698E91D40E1A40021184E /* Vendor */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -277,13 +305,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E81016F41D410FF300600613 /* Salon.swift in Sources */,
+				999698E71D40DF9B0021184E /* Video.swift in Sources */,
 				99BE9DD91D40760D00429478 /* AppDelegate.swift in Sources */,
 				E81016F61D41127700600613 /* ListSalonView.swift in Sources */,
 				E81016FB1D41132A00600613 /* SalonTableCell.swift in Sources */,
 				99BE9DEF1D40799700429478 /* HomeViewController.swift in Sources */,
+				999698EB1D40E1B30021184E /* LazyImage.swift in Sources */,
 				99BE9DF31D4084F700429478 /* Menu.swift in Sources */,
 				E81016F21D410F3600600613 /* SalonCell.swift in Sources */,
+				999698E51D40DEAA0021184E /* VideoCell.swift in Sources */,
 				E81016EE1D40F83F00600613 /* ChainSystemViewController.swift in Sources */,
+				999698E11D40D9DA0021184E /* VideoViewController.swift in Sources */,
 				99BE9DF11D40845B00429478 /* MenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
