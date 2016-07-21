@@ -51,7 +51,7 @@ class HomeViewController: UIViewController {
         layout.minimumLineSpacing = 1
         layout.minimumInteritemSpacing = 1
         let width = (self.view.frame.width - 25)/2 
-        layout.itemSize = CGSizeMake(width, 0.9*width)
+        layout.itemSize = CGSizeMake(width, 1.1*width)
         self.clvMenu.setCollectionViewLayout(layout, animated: true)
     }
     
@@ -78,7 +78,10 @@ class HomeViewController: UIViewController {
     }
     
     func chageImageForSlider() {
-        self.imvSlide.image = UIImage(named: self.slideImageVar.value[self.pageControl.currentPage])
+        UIView.animateWithDuration(0.2, animations: {
+            self.imvSlide.image = UIImage(named: self.slideImageVar.value[self.pageControl.currentPage])
+
+        })
     }
     
     func handleSwipeRight(gesture: UISwipeGestureRecognizer) {
@@ -114,12 +117,12 @@ class HomeViewController: UIViewController {
     
     //MARK: Dump Data
     func initData() {
-        self.menuVariable.value.append(Menu.init(image: "girl1", title: "Tư vấn kiểu tóc theo khuôn mặt"))
-        self.menuVariable.value.append(Menu.init(image: "girl2", title: "Bộ sưu tập kiểu tóc mới nhất 2016"))
-        self.menuVariable.value.append(Menu.init(image: "girl3", title: "Đặt lịch cắt tóc"))
-        self.menuVariable.value.append(Menu.init(image: "girl1", title: "Video tóc ấn tượng"))
-        self.menuVariable.value.append(Menu.init(image: "girl2", title: "Mỹ phẩm nam cao cấp"))
-        self.menuVariable.value.append(Menu.init(image: "girl3", title: "Dịch vụ & Hệ thống Salon"))
+        self.menuVariable.value.append(Menu.init(image: "tuvantoc", title: "Tư vấn kiểu tóc theo khuôn mặt"))
+        self.menuVariable.value.append(Menu.init(image: "bosuutap", title: "Bộ sưu tập kiểu tóc mới nhất 2016"))
+        self.menuVariable.value.append(Menu.init(image: "datlich", title: "Đặt lịch cắt tóc"))
+        self.menuVariable.value.append(Menu.init(image: "video", title: "Video tóc ấn tượng"))
+        self.menuVariable.value.append(Menu.init(image: "mypham", title: "Mỹ phẩm nam cao cấp"))
+        self.menuVariable.value.append(Menu.init(image: "dichvu", title: "Dịch vụ & Hệ thống Salon"))
     }
 
 
