@@ -12,19 +12,47 @@ import RxSwift
 import RxCocoa
 
 class ChainSystemViewController: UIViewController {
-
+    
     
     @IBOutlet weak var selector: NPSegmentedControl!
-     var listSalonView : ListSalonView!
     
+      
+    var listSalonView : ListSalonView!
     
+    @IBOutlet weak var btnHome: UIButton!
+ 
+    @IBOutlet weak var btnProfile: UIButton!
     @IBOutlet weak var contentView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationBar()
         setupSelector()
         setupContent()
-
+        
+    }
+    func setupBarButton(){
+        _ = btnHome.rx_tap.subscribeNext({
+            self.navigationController?.popViewControllerAnimated(true)
+        })
+        
+        _=btnProfile.rx_tap.subscribeNext({
+            print("Profile did tap")
+        })
+    }
+    func configUI() {
+        let logo = UIImage(named: "logo")
+        let imageView = UIImageView(image:logo)
+        imageView.frame = CGRectMake(0, 0, 64, 40)
+        imageView.contentMode = .ScaleAspectFit
+        self.navigationItem.titleView = imageView
+    }
+    
+    func setupNavigationBar()
+    {
+        setupBarButton()
+        configUI()
+        
     }
     
     func setupSelector(){
@@ -48,14 +76,14 @@ class ChainSystemViewController: UIViewController {
     }
     
     func setupContent(){
-
-         self.listSalonView = NSBundle.mainBundle().loadNibNamed("ListSalonView", owner: self, options: nil) [0] as! ListSalonView
+        
+        self.listSalonView = NSBundle.mainBundle().loadNibNamed("ListSalonView", owner: self, options: nil) [0] as! ListSalonView
         self.view.layoutIfNeeded()
         listSalonView.frame = CGRectMake(0, 0, contentView.frame.size.width, contentView.frame.size.height)
         contentView.addSubview(listSalonView)
     }
- 
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
