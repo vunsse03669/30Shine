@@ -83,6 +83,19 @@ class ChainSystemViewController: UIViewController {
         contentView.addSubview(listSalonView)
     }
     
+    @IBAction func selectorValueChange(sender: AnyObject) {
+        if(selector.selectedIndex() == 0){
+            print("Dich vu")
+        }
+        else{
+            print("He thong")
+            //            if(listSalonView != nil){
+            //                self.listSalonView.disappearDetail()
+            //            }
+            
+        }
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
