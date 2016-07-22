@@ -270,7 +270,7 @@
         <!--Chain System View Controller-->
         <scene sceneID="tse-Ya-tQq">
             <objects>
-                <viewController id="QGb-HY-LlH" customClass="ChainSystemViewController" customModule="_0Shine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChainSystemViewController" id="QGb-HY-LlH" customClass="ChainSystemViewController" customModule="_0Shine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YDa-YR-Q9X"/>
                         <viewControllerLayoutGuide type="bottom" id="Hte-Hd-7gD"/>

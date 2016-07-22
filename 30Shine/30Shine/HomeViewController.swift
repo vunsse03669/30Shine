@@ -74,7 +74,9 @@ class HomeViewController: UIViewController {
             switch indexPath.row {
             case 3:
                 vc = self.storyboard?.instantiateViewControllerWithIdentifier("VideoViewController") as? VideoViewController
-            
+            case 5:
+                
+                vc = self.storyboard?.instantiateViewControllerWithIdentifier("ChainSystemViewController") as? ChainSystemViewController
             default:
                 print("xxx")
             }
