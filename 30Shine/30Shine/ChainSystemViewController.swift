@@ -16,11 +16,12 @@ class ChainSystemViewController: UIViewController {
     
     @IBOutlet weak var selector: NPSegmentedControl!
     
-      
+    
     var listSalonView : ListSalonView!
+    var serviceView : ServiceView!
     
     @IBOutlet weak var btnHome: UIButton!
- 
+    
     @IBOutlet weak var btnProfile: UIButton!
     @IBOutlet weak var contentView: UIView!
     
@@ -31,6 +32,7 @@ class ChainSystemViewController: UIViewController {
         setupContent()
         
     }
+    
     func setupBarButton(){
         _ = btnHome.rx_tap.subscribeNext({
             self.navigationController?.popViewControllerAnimated(true)
@@ -52,7 +54,6 @@ class ChainSystemViewController: UIViewController {
     {
         setupBarButton()
         configUI()
-        
     }
     
     func setupSelector(){
@@ -77,13 +78,34 @@ class ChainSystemViewController: UIViewController {
     
     func setupContent(){
         
-        self.listSalonView = NSBundle.mainBundle().loadNibNamed("ListSalonView", owner: self, options: nil) [0] as! ListSalonView
-        self.view.layoutIfNeeded()
-        listSalonView.frame = CGRectMake(0, 0, contentView.frame.size.width, contentView.frame.size.height)
-        contentView.addSubview(listSalonView)
+        listSalonView = ListSalonView.createInView(contentView)
+        serviceView = ServiceView.createInView(contentView)
     }
     
-    
+    @IBAction func selectorValueChange(sender: AnyObject) {
+        if(selector.selectedIndex() == 0){
+            print("Dich vu")
+            UIView .animateWithDuration(0.2, animations: {
+                self.listSalonView.alpha = 0
+                self.serviceView.alpha = 1
+            })
+            if(listSalonView.detailSalonView != nil){
+                self.listSalonView.disappearDetail()
+            }
+        }
+        else{
+            print("He thong")
+            UIView .animateWithDuration(0.2, animations: {
+                self.listSalonView.alpha = 1
+                self.serviceView.alpha = 0
+            })
+            if(listSalonView.detailSalonView != nil){
+                self.listSalonView.disappearDetail()
+            }
+            
+        }
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

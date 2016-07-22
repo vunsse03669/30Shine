@@ -7,24 +7,27 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ListSalonView" customModule="_0Shine" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShineComboView" customModule="_0Shine" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="199" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sBd-dT-oBR">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Id-QB-TKO">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Lvb-IO-Xgy"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="sBd-dT-oBR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Lbh-yU-NE3"/>
-                <constraint firstItem="sBd-dT-oBR" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="RC8-7R-lS1"/>
-                <constraint firstItem="sBd-dT-oBR" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="UMy-zb-6TF"/>
-                <constraint firstItem="sBd-dT-oBR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lTT-Zd-RwG"/>
+                <constraint firstItem="6Id-QB-TKO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FLR-hn-2ad"/>
+                <constraint firstItem="6Id-QB-TKO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Sf6-rt-Vrb"/>
+                <constraint firstAttribute="trailing" secondItem="6Id-QB-TKO" secondAttribute="trailing" id="WOq-F2-j4E"/>
+                <constraint firstAttribute="bottom" secondItem="6Id-QB-TKO" secondAttribute="bottom" id="sjO-vo-bKo"/>
             </constraints>
             <connections>
-                <outlet property="tbvListSalon" destination="sBd-dT-oBR" id="iGW-xx-ptN"/>
+                <outlet property="tbvListCombo" destination="6Id-QB-TKO" id="6Oh-yx-quU"/>
             </connections>
         </view>
     </objects>
