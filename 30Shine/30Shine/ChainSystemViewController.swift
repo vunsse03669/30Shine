@@ -54,6 +54,7 @@ class ChainSystemViewController: UIViewController {
         listSalonView.frame = CGRectMake(0, 0, contentView.frame.size.width, contentView.frame.size.height)
         contentView.addSubview(listSalonView)
     }
+ 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
