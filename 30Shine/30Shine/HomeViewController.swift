@@ -62,6 +62,29 @@ class HomeViewController: UIViewController {
             cell.imvMenu.image = UIImage(named: data.imageName)
             cell.lblTitle.text = "\(data.title)"
         }
+        
+        /*
+         let settingsVC : SettingsViewController! = self.storyboard?.instantiateViewControllerWithIdentifier("SettingsViewController") as? SettingsViewController
+         self.navigationController?.pushViewController(settingsVC, animated: true)
+
+         */
+        _ = self.clvMenu.rx_itemSelected.subscribeNext {
+            indexPath in
+            var vc : UIViewController!
+            switch indexPath.row {
+            case 3:
+                vc = self.storyboard?.instantiateViewControllerWithIdentifier("VideoViewController") as? VideoViewController
+            case 5:
+                
+                vc = self.storyboard?.instantiateViewControllerWithIdentifier("ChainSystemViewController") as? ChainSystemViewController
+            default:
+                print("xxx")
+            }
+            if vc != nil {
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
+        }
     }
     
     //MARK: Silder banner
