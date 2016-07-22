@@ -113,7 +113,7 @@ class VideoViewController: UIViewController {
         self.videoVariable.value.append(Video.init(title: "Cắt tạo kiểu Side Part | Phong cách Chanyeol (EXO) | Minh Phụng ", thumb: "https://www.youtube.com/watch?v=Q4to0oI2N-A"))
         self.videoVariable.value.append(Video.init(title: "Cắt tạo kiểu Side Swept | Hồ Gia Hùng - HKT Band ", thumb: "https://www.youtube.com/watch?v=VgNELJELfDE"))
         self.videoVariable.value.append(Video.init(title: "Cắt tạo kiểu Side Part | Phong cách TAO (EXO) | Ubin-G ", thumb: "https://www.youtube.com/watch?v=AX2HSXMNAGA"))
-        self.videoVariable.value.append(Video.init(title: "Cắt tạo kiểu Undercut Quiff | Phong cách Marco Reus | Hoàng Giang ", thumb: "https://www.youtube.com/watch?v=y-CeDeXSFMU"))
+        self.videoVariable.value.append(Video.init(title: "Cắt tạo kiểu Undercut Quiff | Phong cách Marco Reus | Hoàng Giang ", thumb: "https://www.youtube.com/watch?v=nHognIn1my8"))
         self.videoVariable.value.append(Video.init(title: " Cắt tạo kiểu Layer | Phong cách Luhan (EXO) | Quang Hưng ", thumb: "https://www.youtube.com/watch?v=AgnFqNt_lfQ"))
     }
     

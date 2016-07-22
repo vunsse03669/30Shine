@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
     var currentPage = 0
     let swipeGestureLeft = UISwipeGestureRecognizer()
     let swipeGestureRight = UISwipeGestureRecognizer()
+    var isPressOnSlider = false
     
     var slideImageVar : Variable<[String]> = Variable(["girl1","girl2","girl3"])
     var menuVariable  : Variable<[Menu]> = Variable([])
@@ -95,6 +96,19 @@ class HomeViewController: UIViewController {
         self.imvSlide.addGestureRecognizer(self.swipeGestureRight)
         self.swipeGestureRight.addTarget(self, action: #selector(HomeViewController.handleSwipeRight(_:)))
         self.swipeGestureLeft.addTarget(self, action: #selector(HomeViewController.handleSwipeLeft(_:)))
+        
+        let longPress = UILongPressGestureRecognizer.init()
+        _ = longPress.rx_event.subscribeNext {
+            gestureReconizer in
+            if gestureReconizer.state == UIGestureRecognizerState.Began {
+                self.isPressOnSlider = true
+            }
+            else if gestureReconizer.state == UIGestureRecognizerState.Ended {
+                self.isPressOnSlider = false
+            }
+        }
+        self.imvSlide.addGestureRecognizer(longPress)
+        
         self.chageImageForSlider()
         NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(self.autoNextSlide), userInfo: nil, repeats: true)
 
@@ -129,13 +143,15 @@ class HomeViewController: UIViewController {
     }
     
     func autoNextSlide() {
-        self.pageControl.currentPage += 1
-        self.currentPage += 1
-        if self.currentPage == self.pageControl.numberOfPages {
-            self.pageControl.currentPage = 0
-            self.currentPage = 0
+        if !self.isPressOnSlider {
+            self.pageControl.currentPage += 1
+            self.currentPage += 1
+            if self.currentPage == self.pageControl.numberOfPages {
+                self.pageControl.currentPage = 0
+                self.currentPage = 0
+            }
+            self.chageImageForSlider()
         }
-        self.chageImageForSlider()
     }
     
     //MARK: Dump Data
