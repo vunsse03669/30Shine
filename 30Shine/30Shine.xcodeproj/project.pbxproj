@@ -12,6 +12,14 @@
 		9918F52E1D431F4600EC7B26 /* JSONKEYsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F52D1D431F4600EC7B26 /* JSONKEYsExtension.swift */; };
 		9918F5311D431FEE00EC7B26 /* MenuNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F5301D431FEE00EC7B26 /* MenuNetwork.swift */; };
 		9918F5341D4320B300EC7B26 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F5331D4320B300EC7B26 /* AppConstant.swift */; };
+		9966F84C1D43AB6C00DFE987 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966F84B1D43AB6C00DFE987 /* ProfileViewController.swift */; };
+		9966F84E1D43AF8B00DFE987 /* CustomerHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966F84D1D43AF8B00DFE987 /* CustomerHistoryView.swift */; };
+		9966F8501D43AFB500DFE987 /* CustomerHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9966F84F1D43AFB500DFE987 /* CustomerHistoryView.xib */; };
+		9966F8521D43B09200DFE987 /* CustomerHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966F8511D43B09200DFE987 /* CustomerHistoryCell.swift */; };
+		9966F8541D43B0C400DFE987 /* CustomerHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9966F8531D43B0C400DFE987 /* CustomerHistoryCell.xib */; };
+		9966F8571D43B77F00DFE987 /* CustomerHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966F8561D43B77F00DFE987 /* CustomerHistory.swift */; };
+		9966F8591D43BA9900DFE987 /* HistoryNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966F8581D43BA9900DFE987 /* HistoryNetwork.swift */; };
+		9966F85B1D43C59900DFE987 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966F85A1D43C59900DFE987 /* UIColorExtension.swift */; };
 		999698E11D40D9DA0021184E /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999698E01D40D9DA0021184E /* VideoViewController.swift */; };
 		999698E51D40DEAA0021184E /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999698E41D40DEAA0021184E /* VideoCell.swift */; };
 		999698E71D40DF9B0021184E /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999698E61D40DF9B0021184E /* Video.swift */; };
@@ -56,6 +64,14 @@
 		9918F52D1D431F4600EC7B26 /* JSONKEYsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKEYsExtension.swift; sourceTree = "<group>"; };
 		9918F5301D431FEE00EC7B26 /* MenuNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNetwork.swift; sourceTree = "<group>"; };
 		9918F5331D4320B300EC7B26 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		9966F84B1D43AB6C00DFE987 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9966F84D1D43AF8B00DFE987 /* CustomerHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerHistoryView.swift; sourceTree = "<group>"; };
+		9966F84F1D43AFB500DFE987 /* CustomerHistoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerHistoryView.xib; sourceTree = "<group>"; };
+		9966F8511D43B09200DFE987 /* CustomerHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerHistoryCell.swift; sourceTree = "<group>"; };
+		9966F8531D43B0C400DFE987 /* CustomerHistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerHistoryCell.xib; sourceTree = "<group>"; };
+		9966F8561D43B77F00DFE987 /* CustomerHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerHistory.swift; sourceTree = "<group>"; };
+		9966F8581D43BA9900DFE987 /* HistoryNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryNetwork.swift; sourceTree = "<group>"; };
+		9966F85A1D43C59900DFE987 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		999698E01D40D9DA0021184E /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		999698E41D40DEAA0021184E /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		999698E61D40DF9B0021184E /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
@@ -123,10 +139,20 @@
 			name = Home;
 			sourceTree = "<group>";
 		};
+		9966F8551D43B75C00DFE987 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				9966F8561D43B77F00DFE987 /* CustomerHistory.swift */,
+				9966F8581D43BA9900DFE987 /* HistoryNetwork.swift */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
 		999698E81D40E19F0021184E /* Apple */ = {
 			isa = PBXGroup;
 			children = (
 				E89F8CA61D4260BB0015931A /* UIViewExtension.swift */,
+				9966F85A1D43C59900DFE987 /* UIColorExtension.swift */,
 			);
 			name = Apple;
 			sourceTree = "<group>";
@@ -180,6 +206,7 @@
 				E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */,
 				99BE9DEE1D40799700429478 /* HomeViewController.swift */,
 				999698E01D40D9DA0021184E /* VideoViewController.swift */,
+				9966F84B1D43AB6C00DFE987 /* ProfileViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -207,6 +234,10 @@
 				E89F8C9A1D4240F60015931A /* ServiceView.xib */,
 				E89F8CA21D4258EE0015931A /* OtherServicesView.swift */,
 				E89F8CA41D4258FD0015931A /* OtherServicesView.xib */,
+				9966F84D1D43AF8B00DFE987 /* CustomerHistoryView.swift */,
+				9966F84F1D43AFB500DFE987 /* CustomerHistoryView.xib */,
+				9966F8511D43B09200DFE987 /* CustomerHistoryCell.swift */,
+				9966F8531D43B0C400DFE987 /* CustomerHistoryCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -215,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				9918F52F1D431FBA00EC7B26 /* Home */,
+				9966F8551D43B75C00DFE987 /* History */,
 				E81016F31D410FF300600613 /* Salon.swift */,
 				999698E61D40DF9B0021184E /* Video.swift */,
 				E89F8CA81D42695C0015931A /* Combo.swift */,
@@ -309,7 +341,9 @@
 				E89F8C931D4234D60015931A /* DetailSalonView.xib in Resources */,
 				E89F8CA51D4258FD0015931A /* OtherServicesView.xib in Resources */,
 				E81016F01D40F85C00600613 /* UTM Alexander.ttf in Resources */,
+				9966F8541D43B0C400DFE987 /* CustomerHistoryCell.xib in Resources */,
 				E81016FC1D41132A00600613 /* SalonTableCell.xib in Resources */,
+				9966F8501D43AFB500DFE987 /* CustomerHistoryView.xib in Resources */,
 				99BE9DE31D40760D00429478 /* LaunchScreen.storyboard in Resources */,
 				E89F8C9B1D4240F60015931A /* ServiceView.xib in Resources */,
 				99BE9DE01D40760D00429478 /* Assets.xcassets in Resources */,
@@ -393,10 +427,15 @@
 				9918F5311D431FEE00EC7B26 /* MenuNetwork.swift in Sources */,
 				9918F52E1D431F4600EC7B26 /* JSONKEYsExtension.swift in Sources */,
 				999698E71D40DF9B0021184E /* Video.swift in Sources */,
+				9966F84C1D43AB6C00DFE987 /* ProfileViewController.swift in Sources */,
+				9966F84E1D43AF8B00DFE987 /* CustomerHistoryView.swift in Sources */,
 				99BE9DD91D40760D00429478 /* AppDelegate.swift in Sources */,
 				E81016F61D41127700600613 /* ListSalonView.swift in Sources */,
+				9966F8591D43BA9900DFE987 /* HistoryNetwork.swift in Sources */,
+				9966F85B1D43C59900DFE987 /* UIColorExtension.swift in Sources */,
 				E89F8C9F1D4257A10015931A /* ShineComboView.swift in Sources */,
 				E81016FB1D41132A00600613 /* SalonTableCell.swift in Sources */,
+				9966F8571D43B77F00DFE987 /* CustomerHistory.swift in Sources */,
 				99BE9DEF1D40799700429478 /* HomeViewController.swift in Sources */,
 				999698EB1D40E1B30021184E /* LazyImage.swift in Sources */,
 				E89F8C991D4240E80015931A /* ServiceView.swift in Sources */,
@@ -411,6 +450,7 @@
 				E81016EE1D40F83F00600613 /* ChainSystemViewController.swift in Sources */,
 				999698E11D40D9DA0021184E /* VideoViewController.swift in Sources */,
 				E89F8CAB1D426C200015931A /* ShineComboCell.swift in Sources */,
+				9966F8521D43B09200DFE987 /* CustomerHistoryCell.swift in Sources */,
 				99BE9DF11D40845B00429478 /* MenuCell.swift in Sources */,
 				9918F52A1D431BA800EC7B26 /* DB.swift in Sources */,
 			);

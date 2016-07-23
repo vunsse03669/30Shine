@@ -77,7 +77,6 @@ class ChainSystemViewController: UIViewController {
     }
     
     func setupContent(){
-        
         listSalonView = ListSalonView.createInView(contentView)
         serviceView = ServiceView.createInView(contentView)
     }

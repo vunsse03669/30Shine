@@ -11,3 +11,4 @@ import Foundation
 //API
 let MENU_API = "http://api.30shine.com/category/home"
 let SLIDE_HOME_API = "http://api.30shine.com/slide/home"
+let HISTORY_API = "http://api.30shine.com/customer/history"

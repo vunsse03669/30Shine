@@ -13,6 +13,7 @@ import Alamofire
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var btnProfile: UIButton!
     @IBOutlet weak var clvMenu: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var imvSlide: UIImageView!
@@ -30,6 +31,12 @@ class HomeViewController: UIViewController {
         self.initData()
         self.configUI()
         self.configSilder()
+        
+        //Click btnProfile
+        _ = btnProfile.rx_tap.subscribeNext {
+            let vc = self.storyboard?.instantiateViewControllerWithIdentifier("ProfileViewController") as! ProfileViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     //MARK: UI
     func configUI() {

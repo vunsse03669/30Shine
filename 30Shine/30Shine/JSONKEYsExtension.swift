@@ -17,4 +17,11 @@ extension JSONKeys {
     static let thumb = JSONKey<JSON>("Thumb")
     static let imageUrl =  JSONKey<String>("url")
     static let image = JSONKey<JSON>("Image")
+    
+    //customer history
+    static let billCreatedTime = JSONKey<String>("billCreatedTime")
+    static let stylistName = JSONKey<String>("stylistName")
+    static let skinnerName = JSONKey<String>("skinnerName")
+    static let rating = JSONKey<String>("rating")
+    static let services = JSONKey<JSON>("services")
 }
