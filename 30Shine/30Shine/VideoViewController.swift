@@ -74,7 +74,6 @@ class VideoViewController: UIViewController {
     
     func playVideo(url : String) {
         self.moviePlayer = MPMoviePlayerController()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(VideoViewController.doneButtonClick(_:)), name: MPMoviePlayerWillExitFullscreenNotification, object: self.moviePlayer)
         
         self.view.layoutIfNeeded()
         self.moviePlayer.view.frame = self.view.frame
@@ -82,8 +81,10 @@ class VideoViewController: UIViewController {
         self.view.addSubview(self.moviePlayer.view)
         self.moviePlayer.fullscreen = true
         let youtubeURL = NSURL(string: url)!
-        self.playVideoWithYoutubeURL(youtubeURL)
-
+        if youtubeURL.absoluteString != "" {
+             self.playVideoWithYoutubeURL(youtubeURL)
+             NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(VideoViewController.doneButtonClick(_:)), name: MPMoviePlayerWillExitFullscreenNotification, object: nil)
+        }
     }
     
     func playVideoWithYoutubeURL(url: NSURL) {
@@ -97,14 +98,17 @@ class VideoViewController: UIViewController {
     }
     
     func doneButtonClick(sender:NSNotification?){
-    
         let value = UIInterfaceOrientation.Portrait.rawValue
         UIDevice.currentDevice().setValue(value, forKey: "orientation")
         NSNotificationCenter.defaultCenter().removeObserver(self, name: MPMoviePlayerWillExitFullscreenNotification, object: nil)
         self.moviePlayer.stop()
-        self.moviePlayer.view.removeFromSuperview()
-        self.moviePlayer = nil
-      
+        let delay = 0.1 * Double(NSEC_PER_SEC)
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue()) {
+            self.moviePlayer.stop()
+            self.moviePlayer.view.removeFromSuperview()
+            self.moviePlayer = nil
+        }
     }
 
 

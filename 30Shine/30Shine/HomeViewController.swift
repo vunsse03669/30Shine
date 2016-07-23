@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Alamofire
 
 class HomeViewController: UIViewController {
 
@@ -21,7 +22,7 @@ class HomeViewController: UIViewController {
     let swipeGestureRight = UISwipeGestureRecognizer()
     var isPressOnSlider = false
     
-    var slideImageVar : Variable<[String]> = Variable(["girl1","girl2","girl3"])
+    var slideImageVar : Variable<[String]> = Variable([])
     var menuVariable  : Variable<[Menu]> = Variable([])
     
     override func viewDidLoad() {
@@ -29,7 +30,6 @@ class HomeViewController: UIViewController {
         self.initData()
         self.configUI()
         self.configSilder()
-        self.configCollectionView()
     }
     //MARK: UI
     func configUI() {
@@ -58,30 +58,27 @@ class HomeViewController: UIViewController {
     
     //MARK: CollectioView
     func configCollectionView() {
-        _ = self.menuVariable.asObservable().bindTo(self.clvMenu.rx_itemsWithCellIdentifier("MenuCell", cellType: MenuCell.self)) {
-            row,data,cell in
-            cell.imvMenu.image = UIImage(named: data.imageName)
-            cell.lblTitle.text = "\(data.title)"
+        dispatch_async(dispatch_get_main_queue()) {
+            _ = self.menuVariable.asObservable().bindTo(self.clvMenu.rx_itemsWithCellIdentifier("MenuCell", cellType: MenuCell.self)) {
+                row,data,cell in
+                LazyImage.showForImageView(cell.imvMenu, url: data.imageName)
+                cell.lblTitle.text = "\(data.title)"
+            }
         }
         
-        /*
-         let settingsVC : SettingsViewController! = self.storyboard?.instantiateViewControllerWithIdentifier("SettingsViewController") as? SettingsViewController
-         self.navigationController?.pushViewController(settingsVC, animated: true)
-
-         */
         _ = self.clvMenu.rx_itemSelected.subscribeNext {
             indexPath in
             var vc : UIViewController!
             switch indexPath.row {
-            case 1 :
-                vc = self.storyboard?.instantiateViewControllerWithIdentifier("HairCollectionViewController") as? HairCollectionViewController
+//            case 1 :
+//                vc = self.storyboard?.instantiateViewControllerWithIdentifier("HairCollectionViewController") as? HairCollectionViewController
             case 3:
                 vc = self.storyboard?.instantiateViewControllerWithIdentifier("VideoViewController") as? VideoViewController
             case 5:
                 
                 vc = self.storyboard?.instantiateViewControllerWithIdentifier("ChainSystemViewController") as? ChainSystemViewController
             default:
-                print("xxx")
+                print("Tap Failed!!!")
             }
             if vc != nil {
                 self.navigationController?.pushViewController(vc, animated: true)
@@ -118,7 +115,13 @@ class HomeViewController: UIViewController {
     
     func chageImageForSlider() {
         UIView.animateWithDuration(0.2, animations: {
-            self.imvSlide.image = UIImage(named: self.slideImageVar.value[self.pageControl.currentPage])
+            _ = self.slideImageVar.asObservable().subscribeNext {
+                slides in
+                self.pageControl.numberOfPages = slides.count
+                if slides.count > 0 {
+                    LazyImage.showForImageView(self.imvSlide, url: slides[self.pageControl.currentPage])
+                }
+            }
 
         })
     }
@@ -156,15 +159,47 @@ class HomeViewController: UIViewController {
         }
     }
     
-    //MARK: Dump Data
+    //MARK: Data
     func initData() {
-        self.menuVariable.value.append(Menu.init(image: "tuvantoc", title: "Tư vấn kiểu tóc theo khuôn mặt"))
-        self.menuVariable.value.append(Menu.init(image: "bosuutap", title: "Bộ sưu tập kiểu tóc mới nhất 2016"))
-        self.menuVariable.value.append(Menu.init(image: "datlich", title: "Đặt lịch cắt tóc"))
-        self.menuVariable.value.append(Menu.init(image: "video", title: "Video tóc ấn tượng"))
-        self.menuVariable.value.append(Menu.init(image: "mypham", title: "Mỹ phẩm nam cao cấp"))
-        self.menuVariable.value.append(Menu.init(image: "dichvu", title: "Dịch vụ & Hệ thống Salon"))
+        self.parseJsonMenu({() in
+            self.configCollectionView()
+        })
+        self.parseJsonSlide()
     }
+    
+    func parseJsonMenu(complete:()->()) {
+        let parameter = ["Id":1000]
+        dispatch_async(dispatch_get_global_queue(0, 0)) {
+            Alamofire.request(.POST, MENU_API,parameters: parameter,encoding: .JSON).responseJASON { response in
+                if let json = response.result.value {
+                    let menus = json["d"].map(MenuNetwork.init)
+                    for menu in menus {
+                        if Menu.getMenuByTitle(menu.name) == nil {
+                            self.menuVariable.value.append(Menu.create(menu.name, imageName: menu.thumb.imageUrl))
+                        }
+                        else {
+                            self.menuVariable.value.append(Menu.getMenuByTitle(menu.name))
+                        }
+                    }
+                    complete()
+                }
+            }
+        }
+    }
+    
+    func parseJsonSlide() {
+        let parameter = ["Id":1000]
+        dispatch_async(dispatch_get_global_queue(0, 0)) {
+            Alamofire.request(.POST, SLIDE_HOME_API,parameters: parameter,encoding: .JSON).responseJASON { response in
+                if let json = response.result.value {
+                    let slides = json["d"].map(SlideNetwork.init)
+                    for slide in slides {
+                        self.slideImageVar.value.append(slide.image.imageUrl)
+                    }
+                }
+            }
+        }
 
+    }
 
 }

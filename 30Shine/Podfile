@@ -11,6 +11,7 @@ pod 'RealmSwift'
 pod 'ReachabilitySwift'
 pod 'NPSegmentedControl'
 pod 'youtube-parser'
+pod 'JASON'
 
 end
 
