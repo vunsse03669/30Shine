@@ -21,7 +21,6 @@ class ChainSystemViewController: UIViewController {
     var serviceView : ServiceView!
     
     @IBOutlet weak var btnHome: UIButton!
-    
     @IBOutlet weak var btnProfile: UIButton!
     @IBOutlet weak var contentView: UIView!
     

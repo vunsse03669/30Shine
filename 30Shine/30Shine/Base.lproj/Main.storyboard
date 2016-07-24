@@ -421,12 +421,15 @@
                                     <constraint firstItem="bgT-sx-rgo" firstAttribute="leading" secondItem="UFI-y1-g2A" secondAttribute="leading" id="Sgy-Fn-9MO"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fj3-ba-gC7">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fj3-ba-gC7" customClass="NPSegmentedControl" customModule="NPSegmentedControl">
                                 <rect key="frame" x="0.0" y="107" width="600" height="44"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="d1w-uu-ws6"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="selectorValueChange:" destination="zBo-x6-QTv" eventType="valueChanged" id="15Z-L1-Pxu"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPd-tW-pvm">
                                 <rect key="frame" x="8" y="159" width="584" height="433"/>
@@ -467,7 +470,7 @@
                         <outlet property="btnHome" destination="BGU-ja-KfR" id="zSa-PQ-3I2"/>
                         <outlet property="btnProfile" destination="WBa-xL-2Sc" id="m1f-tQ-Q2v"/>
                         <outlet property="vContainer" destination="dPd-tW-pvm" id="0NK-YD-Oxx"/>
-                        <outlet property="vSelector" destination="Fj3-ba-gC7" id="rv7-NK-0wW"/>
+                        <outlet property="vSelector" destination="Fj3-ba-gC7" id="gcS-nV-8Xt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RrD-rF-2Y4" userLabel="First Responder" sceneMemberID="firstResponder"/>
