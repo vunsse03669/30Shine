@@ -17,6 +17,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var btnProfile: UIButton!
     
     var historyView : CustomerHistoryView!
+    var currentTab = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +65,8 @@ class ProfileViewController: UIViewController {
 
     
     @IBAction func selectorValueChange(sender: AnyObject) {
-        if(self.vSelector.selectedIndex() == 0){
+        if(self.vSelector.selectedIndex() == 0 && self.currentTab != 0){
+            self.currentTab = 0
             print("Dich vu")
 //            UIView .animateWithDuration(0.2, animations: {
 //                self.listSalonView.alpha = 0
@@ -74,8 +76,10 @@ class ProfileViewController: UIViewController {
 //                self.listSalonView.disappearDetail()
 //            }
         }
-        else if(self.vSelector.selectedIndex() == 3) {
+        else if(self.vSelector.selectedIndex() == 3 && self.currentTab != 3) {
             print("history")
+            self.currentTab = 3
+            self.removeSubView()
             self.configContent()
 //            UIView .animateWithDuration(0.2, animations: {
 //                self.listSalonView.alpha = 1
@@ -87,5 +91,11 @@ class ProfileViewController: UIViewController {
             
         }
 
+    }
+    
+    func removeSubView() {
+        for view in self.vContainer.subviews {
+            view.removeFromSuperview()
+        }
     }
 }

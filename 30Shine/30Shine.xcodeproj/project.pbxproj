@@ -12,6 +12,10 @@
 		9918F52E1D431F4600EC7B26 /* JSONKEYsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F52D1D431F4600EC7B26 /* JSONKEYsExtension.swift */; };
 		9918F5311D431FEE00EC7B26 /* MenuNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F5301D431FEE00EC7B26 /* MenuNetwork.swift */; };
 		9918F5341D4320B300EC7B26 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F5331D4320B300EC7B26 /* AppConstant.swift */; };
+		99614FC91D46051100EBC15F /* HairCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FC81D46051100EBC15F /* HairCollectionViewController.swift */; };
+		99614FCB1D46053400EBC15F /* HairTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FCA1D46053400EBC15F /* HairTypeCell.swift */; };
+		99614FD01D46067C00EBC15F /* HairNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FCF1D46067C00EBC15F /* HairNetwork.swift */; };
+		99614FD21D4607CA00EBC15F /* HairType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FD11D4607CA00EBC15F /* HairType.swift */; };
 		9966F84C1D43AB6C00DFE987 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966F84B1D43AB6C00DFE987 /* ProfileViewController.swift */; };
 		9966F84E1D43AF8B00DFE987 /* CustomerHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966F84D1D43AF8B00DFE987 /* CustomerHistoryView.swift */; };
 		9966F8501D43AFB500DFE987 /* CustomerHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9966F84F1D43AFB500DFE987 /* CustomerHistoryView.xib */; };
@@ -64,6 +68,10 @@
 		9918F52D1D431F4600EC7B26 /* JSONKEYsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKEYsExtension.swift; sourceTree = "<group>"; };
 		9918F5301D431FEE00EC7B26 /* MenuNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNetwork.swift; sourceTree = "<group>"; };
 		9918F5331D4320B300EC7B26 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		99614FC81D46051100EBC15F /* HairCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairCollectionViewController.swift; sourceTree = "<group>"; };
+		99614FCA1D46053400EBC15F /* HairTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairTypeCell.swift; sourceTree = "<group>"; };
+		99614FCF1D46067C00EBC15F /* HairNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairNetwork.swift; sourceTree = "<group>"; };
+		99614FD11D4607CA00EBC15F /* HairType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairType.swift; sourceTree = "<group>"; };
 		9966F84B1D43AB6C00DFE987 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9966F84D1D43AF8B00DFE987 /* CustomerHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerHistoryView.swift; sourceTree = "<group>"; };
 		9966F84F1D43AFB500DFE987 /* CustomerHistoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerHistoryView.xib; sourceTree = "<group>"; };
@@ -139,6 +147,15 @@
 			name = Home;
 			sourceTree = "<group>";
 		};
+		99614FCE1D46059200EBC15F /* HairCollection */ = {
+			isa = PBXGroup;
+			children = (
+				99614FD11D4607CA00EBC15F /* HairType.swift */,
+				99614FCF1D46067C00EBC15F /* HairNetwork.swift */,
+			);
+			name = HairCollection;
+			sourceTree = "<group>";
+		};
 		9966F8551D43B75C00DFE987 /* History */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +220,7 @@
 		99BE9DEA1D40783700429478 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				99614FC81D46051100EBC15F /* HairCollectionViewController.swift */,
 				E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */,
 				99BE9DEE1D40799700429478 /* HomeViewController.swift */,
 				999698E01D40D9DA0021184E /* VideoViewController.swift */,
@@ -214,6 +232,7 @@
 		99BE9DEB1D40784600429478 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				99614FCA1D46053400EBC15F /* HairTypeCell.swift */,
 				99BE9DDF1D40760D00429478 /* Assets.xcassets */,
 				99BE9DDC1D40760D00429478 /* Main.storyboard */,
 				99BE9DE11D40760D00429478 /* LaunchScreen.storyboard */,
@@ -245,6 +264,7 @@
 		99BE9DEC1D40784B00429478 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				99614FCE1D46059200EBC15F /* HairCollection */,
 				9918F52F1D431FBA00EC7B26 /* Home */,
 				9966F8551D43B75C00DFE987 /* History */,
 				E81016F31D410FF300600613 /* Salon.swift */,
@@ -427,6 +447,7 @@
 				9918F5311D431FEE00EC7B26 /* MenuNetwork.swift in Sources */,
 				9918F52E1D431F4600EC7B26 /* JSONKEYsExtension.swift in Sources */,
 				999698E71D40DF9B0021184E /* Video.swift in Sources */,
+				99614FC91D46051100EBC15F /* HairCollectionViewController.swift in Sources */,
 				9966F84C1D43AB6C00DFE987 /* ProfileViewController.swift in Sources */,
 				9966F84E1D43AF8B00DFE987 /* CustomerHistoryView.swift in Sources */,
 				99BE9DD91D40760D00429478 /* AppDelegate.swift in Sources */,
@@ -445,10 +466,13 @@
 				99C4CB321D433F46006BD121 /* SlideNetwork.swift in Sources */,
 				9918F5341D4320B300EC7B26 /* AppConstant.swift in Sources */,
 				E89F8CA91D42695C0015931A /* Combo.swift in Sources */,
+				99614FD01D46067C00EBC15F /* HairNetwork.swift in Sources */,
+				99614FCB1D46053400EBC15F /* HairTypeCell.swift in Sources */,
 				E89F8CA31D4258EE0015931A /* OtherServicesView.swift in Sources */,
 				999698E51D40DEAA0021184E /* VideoCell.swift in Sources */,
 				E81016EE1D40F83F00600613 /* ChainSystemViewController.swift in Sources */,
 				999698E11D40D9DA0021184E /* VideoViewController.swift in Sources */,
+				99614FD21D4607CA00EBC15F /* HairType.swift in Sources */,
 				E89F8CAB1D426C200015931A /* ShineComboCell.swift in Sources */,
 				9966F8521D43B09200DFE987 /* CustomerHistoryCell.swift in Sources */,
 				99BE9DF11D40845B00429478 /* MenuCell.swift in Sources */,

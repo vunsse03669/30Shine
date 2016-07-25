@@ -79,8 +79,8 @@ class HomeViewController: UIViewController {
             indexPath in
             var vc : UIViewController!
             switch indexPath.row {
-//            case 1 :
-//                vc = self.storyboard?.instantiateViewControllerWithIdentifier("HairCollectionViewController") as? HairCollectionViewController
+            case 1 :
+                vc = self.storyboard?.instantiateViewControllerWithIdentifier("HairCollectionViewController") as? HairCollectionViewController
             case 3:
                 vc = self.storyboard?.instantiateViewControllerWithIdentifier("VideoViewController") as? VideoViewController
             case 5:

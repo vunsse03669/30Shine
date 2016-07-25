@@ -24,4 +24,8 @@ extension JSONKeys {
     static let skinnerName = JSONKey<String>("skinnerName")
     static let rating = JSONKey<String>("rating")
     static let services = JSONKey<JSON>("services")
+    
+    // hair colletion
+    static let images = JSONKey<JSON>("Image")
+    static let title = JSONKey<String>("Title")
 }
