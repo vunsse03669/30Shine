@@ -10,6 +10,7 @@ import UIKit
 import NPSegmentedControl
 import RxSwift
 import RxCocoa
+import Alamofire
 
 class ChainSystemViewController: UIViewController {
     
@@ -100,11 +101,11 @@ class ChainSystemViewController: UIViewController {
             if(listSalonView.detailSalonView != nil){
                 self.listSalonView.disappearDetail()
             }
-            
         }
-        
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
 }

@@ -7,21 +7,57 @@
 //
 
 import UIKit
+import RealmSwift
 
-class Salon: NSObject {
+class Salon: Object {
     
-    var imageSalonName : String = ""
-    var address        : String = ""
-    var managerName    : String = ""
-    var hotLine        : String = ""
-    var facebookLink   : String = ""
+    dynamic var ID           : Int = -1
+    dynamic var name         : String = ""
+    dynamic var phone        : String = ""
+    dynamic var managerName  : String = ""
+    dynamic var fanpage      : String = ""
+    var listImages           : List<SalonImage> = List<SalonImage>()
     
+    static func create(id:Int, name:String, phone: String, managerName: String, fanpage:String, listImages : List<SalonImage>) -> Salon{
+        let salon = Salon()
+        salon.ID = id
+        salon.name = name
+        salon.phone = phone
+        salon.managerName = managerName
+        salon.fanpage = fanpage
+        salon.listImages = listImages
+        return salon
+    }
+}
+extension Salon {
+    static func createSalon(salon : Salon){
+        try! sDB.realm.write({
+            sDB.realm.add(salon)
+        })
+    }
     
-    init(imageSalonName: String, address : String, managerName : String, hotLine: String, facebookLink: String) {
-        self.imageSalonName = imageSalonName;
-        self.address = "\(address)";
-        self.managerName = "\(managerName)";
-        self.hotLine = "\(hotLine)";
-        self.facebookLink = "\(facebookLink)";
+    static func getSalonByID( id : Int)->Salon! {
+    let predicate = NSPredicate(format: "ID = %d",id)
+        return sDB.realm.objects(Salon).filter(predicate).first
+    }
+    
+    static func getAllSalon()-> Results<Salon>{
+        return sDB.realm.objects(Salon)
+    }
+}
+class SalonImage : Object{
+    dynamic var url         : String = ""
+    dynamic var thumb       : String = ""
+    dynamic var title       : String = ""
+    dynamic var img_description : String = ""
+    
+    static func create(url : String, thumb: String, title : String, img_description : String) -> SalonImage{
+        let salonImage = SalonImage()
+        salonImage.url = url.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        
+        salonImage.thumb = thumb.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        salonImage.title = title
+        salonImage.img_description = img_description
+        return salonImage
     }
 }
