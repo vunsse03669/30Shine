@@ -20,6 +20,11 @@ class CustomerHistoryView: UIView {
         self.parseJSON { 
             () in
             self.configTableView()
+//            let frame = CGRectMake(50, 20, 5, self.bounds.height)
+//            let lineView = UIView(frame: frame)
+//            lineView.backgroundColor = UIColor(netHex: 0xDBDDDE)
+//            self.addSubview(lineView)
+
         }
     }
     
@@ -40,6 +45,7 @@ class CustomerHistoryView: UIView {
     func configTableView() {
         self.tbvHistory.registerNib(UINib.init(nibName: "CustomerHistoryCell", bundle: nil), forCellReuseIdentifier: "CustomerHistoryCell")
         self.tbvHistory.rowHeight = 120
+        self.tbvHistory.separatorStyle = UITableViewCellSeparatorStyle.None
         
         _ = self.historyVar.asObservable().bindTo(self.tbvHistory.rx_itemsWithCellIdentifier("CustomerHistoryCell", cellType: CustomerHistoryCell.self)) {
             row,data,cell in
@@ -47,6 +53,7 @@ class CustomerHistoryView: UIView {
             cell.lblRate.text = "\(data.rating)"
             cell.lblStylist.text = "\(data.stylistName)"
             cell.lblService.text = "\(data.service)"
+            
         }
         
         _ = self.tbvHistory.rx_itemSelected.subscribeNext {

@@ -91,7 +91,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yA2-1h-zvy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yA2-1h-zvy" customClass="SpringImageView" customModule="Spring">
                                 <rect key="frame" x="8" y="72" width="584" height="120"/>
                             </imageView>
                         </subviews>
@@ -128,7 +128,7 @@
                     <connections>
                         <outlet property="btnProfile" destination="Q2R-Xf-McP" id="0GL-9R-Dv6"/>
                         <outlet property="clvMenu" destination="T3F-F6-MfQ" id="Rza-Fj-0fM"/>
-                        <outlet property="imvSlide" destination="yA2-1h-zvy" id="TNS-Lm-h7Q"/>
+                        <outlet property="imvSlide" destination="yA2-1h-zvy" id="lTe-vv-bmu"/>
                         <outlet property="pageControl" destination="PZV-Kr-q6H" id="CvI-DE-hc7"/>
                     </connections>
                 </viewController>

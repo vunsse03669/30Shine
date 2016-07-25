@@ -21,7 +21,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configUI()
-        self.configContent()
+        //self.configContent()
         self.configSelector()
         //back to home
         _ = btnHome.rx_tap.subscribeNext {
@@ -74,8 +74,9 @@ class ProfileViewController: UIViewController {
 //                self.listSalonView.disappearDetail()
 //            }
         }
-        else{
-            print("He thong")
+        else if(self.vSelector.selectedIndex() == 3) {
+            print("history")
+            self.configContent()
 //            UIView .animateWithDuration(0.2, animations: {
 //                self.listSalonView.alpha = 1
 //                self.serviceView.alpha = 0
