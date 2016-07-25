@@ -11,11 +11,11 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfL-GZ-Szc">
-                    <rect key="frame" x="50" y="20" width="5" height="560"/>
-                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Enc-8R-o5h">
+                    <rect key="frame" x="40" y="40" width="5" height="520"/>
+                    <color key="backgroundColor" red="0.85882352941176465" green="0.8666666666666667" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="5" id="cvP-Oo-bdR"/>
+                        <constraint firstAttribute="width" constant="5" id="esM-IK-OmH"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wFf-gK-lC7">
@@ -23,15 +23,15 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="wFf-gK-lC7" secondAttribute="bottom" id="3ID-fC-aj8"/>
-                <constraint firstItem="qfL-GZ-Szc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="EDB-Gh-9YG"/>
-                <constraint firstAttribute="bottom" secondItem="qfL-GZ-Szc" secondAttribute="bottom" constant="20" id="HD4-on-oP2"/>
+                <constraint firstAttribute="bottom" secondItem="Enc-8R-o5h" secondAttribute="bottom" constant="40" id="4re-p5-Ma8"/>
                 <constraint firstAttribute="trailing" secondItem="wFf-gK-lC7" secondAttribute="trailing" id="QoK-1g-gYU"/>
+                <constraint firstItem="Enc-8R-o5h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="fna-Gy-Wbt"/>
                 <constraint firstItem="wFf-gK-lC7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nyC-oz-aM2"/>
                 <constraint firstItem="wFf-gK-lC7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sPk-1E-aUu"/>
-                <constraint firstItem="qfL-GZ-Szc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="yJn-U5-ZdR"/>
+                <constraint firstItem="Enc-8R-o5h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="zdU-Y4-lab"/>
             </constraints>
             <connections>
                 <outlet property="tbvHistory" destination="wFf-gK-lC7" id="hwi-hL-2bM"/>

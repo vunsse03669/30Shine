@@ -9,6 +9,8 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Alamofire
+import RealmSwift
 
 class HairCollectionViewController: UIViewController {
 
@@ -22,7 +24,6 @@ class HairCollectionViewController: UIViewController {
         super.viewDidLoad()
         self.configUI()
         self.initData()
-        self.configTableView()
         //back to home
         _ = btnHome.rx_tap.subscribeNext {
             self.navigationController?.popViewControllerAnimated(true)
@@ -44,19 +45,48 @@ class HairCollectionViewController: UIViewController {
             row,data,cell in
             cell.lblTitle.text = "\(data.title)"
             cell.lblDescription.text = "\(data.script)"
-            cell.imvImage.image = UIImage(named: data.imageName)
+            LazyImage.showForImageView(cell.imvImage, url: data.images[0].imageUrl)
         }
     }
     
     //MARK: Dump data
     func initData() {
-        self.hairTypeVariable.value.append(HairType(title: "Slick-Back Undercut", script: "Undercut  vuốt ngược", imageName: "slick-back.jpg"))
-        self.hairTypeVariable.value.append(HairType(title: "Slick-Swept Undercut", script: "Undercut vuốt lệch", imageName: "slick-swept.jpg"))
-        self.hairTypeVariable.value.append(HairType(title: "Long-Top Quiff", script: "Mái dài vuốt bồng bềnh", imageName: "long-top.jpg"))
-        self.hairTypeVariable.value.append(HairType(title: "Quiff-Undercut", script: "Undercut với mái bồng", imageName: "quiff-undercut.jpg"))
-        self.hairTypeVariable.value.append(HairType(title: "Side Part", script: "Ngôi lệch hiện đại", imageName: "side-part.jpg"))
-        self.hairTypeVariable.value.append(HairType(title: "Middle Part", script: "Ngôi giữa hiện đại", imageName: "middle-part.jpg"))
-        self.hairTypeVariable.value.append(HairType(title: "Short Quiff/Sport", script: "Tóc ngắn vuốt dựng", imageName: "sport.jpg"))
-        self.hairTypeVariable.value.append(HairType(title: "Layer", script: "Mái dài tỉa lớp", imageName: "layer.jpg"))
+        self.parseJSON { 
+            () in
+            self.configTableView()
+        }
     }
+    
+    func parseJSON(complete: ()->()) {
+        let HAIRTYPE_API = "http://api.30shine.com/hairstyle/index"
+        let parameter = ["" : ""]
+        dispatch_async(dispatch_get_global_queue(0, 0)) {
+            Alamofire.request(.POST,HAIRTYPE_API,parameters: parameter, encoding: .JSON).responseJASON {
+                response in
+                if let json = response.result.value {
+                    let haiTypes = json["d"].map(HairNetwork.init)
+                    for hairType in haiTypes {
+                        let images = List<Imagee>()
+                        for image in hairType.image {
+                            if Imagee.getImageeByUrl(image.url) == nil {
+                                images.append(Imagee.create(image.url))
+                            }
+                            else {
+                                images.append(Imagee.getImageeByUrl(image.url))
+                            }
+                        }
+                        if HairType.getHairTypeById(hairType.id) == nil {
+                            let h = HairType.create(hairType.id, title: hairType.title, script: hairType.description, imageName: images)
+                            self.hairTypeVariable.value.append(h)
+                        }
+                        else {
+                            self.hairTypeVariable.value.append(HairType.getHairTypeById(hairType.id))
+                        }
+                    }
+                    complete()
+                }
+            }
+        }
+    }
+
 }

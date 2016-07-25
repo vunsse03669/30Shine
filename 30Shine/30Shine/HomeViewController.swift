@@ -10,13 +10,15 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Alamofire
+import Spring
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var btnProfile: UIButton!
     @IBOutlet weak var clvMenu: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var imvSlide: UIImageView!
+   
+    @IBOutlet weak var imvSlide: SpringImageView!
     
     var currentPage = 0
     let swipeGestureLeft = UISwipeGestureRecognizer()
@@ -77,8 +79,8 @@ class HomeViewController: UIViewController {
             indexPath in
             var vc : UIViewController!
             switch indexPath.row {
-//            case 1 :
-//                vc = self.storyboard?.instantiateViewControllerWithIdentifier("HairCollectionViewController") as? HairCollectionViewController
+            case 1 :
+                vc = self.storyboard?.instantiateViewControllerWithIdentifier("HairCollectionViewController") as? HairCollectionViewController
             case 3:
                 vc = self.storyboard?.instantiateViewControllerWithIdentifier("VideoViewController") as? VideoViewController
             case 5:
@@ -121,16 +123,14 @@ class HomeViewController: UIViewController {
     }
     
     func chageImageForSlider() {
-        UIView.animateWithDuration(0.2, animations: {
-            _ = self.slideImageVar.asObservable().subscribeNext {
-                slides in
-                self.pageControl.numberOfPages = slides.count
-                if slides.count > 0 {
-                    LazyImage.showForImageView(self.imvSlide, url: slides[self.pageControl.currentPage])
-                }
+        _ = self.slideImageVar.asObservable().subscribeNext {
+            slides in
+            self.pageControl.numberOfPages = slides.count
+            if slides.count > 0 {
+                LazyImage.showForImageView(self.imvSlide, url: slides[self.pageControl.currentPage])
             }
-
-        })
+        }
+        
     }
     
     func handleSwipeRight(gesture: UISwipeGestureRecognizer) {
@@ -144,7 +144,6 @@ class HomeViewController: UIViewController {
     }
     
     func handleSwipeLeft(gesture: UISwipeGestureRecognizer) {
-        
         self.pageControl.currentPage += 1
         self.currentPage += 1
         if self.currentPage == self.pageControl.numberOfPages {
