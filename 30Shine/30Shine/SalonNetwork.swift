@@ -15,7 +15,7 @@ struct  SalonNetwork {
     let phone        : String
     let managerName  : String
     let fanpage      : String
-    let images       : [SalonImageNetWork]
+    let images       : [ImageNetWork]
     
     init(_ json : JSON){
         ID = json[.id]
@@ -23,11 +23,11 @@ struct  SalonNetwork {
         phone = json[.salon_phone]
         managerName = json[.salon_managerName]
         fanpage = json[.salon_fanpage]
-        images = json[.salon_images].map(SalonImageNetWork.init)
+        images = json[.salon_images].map(ImageNetWork.init)
     }
 }
 
-struct SalonImageNetWork {
+struct ImageNetWork {
     var url         : String = ""
     var thumb       : String = ""
     var title       : String = ""

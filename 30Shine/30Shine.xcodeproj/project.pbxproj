@@ -35,7 +35,6 @@
 		DBEADA86A5D072CA63EE3FD1 /* Pods_30Shine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838FF4F4FB476EEA698D3134 /* Pods_30Shine.framework */; };
 		E80076A21D462A2300F394CF /* ComboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80076A11D462A2300F394CF /* ComboCell.swift */; };
 		E80076A61D462A4800F394CF /* ComboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E80076A51D462A4800F394CF /* ComboCell.xib */; };
-		E80076A81D462E6200F394CF /* ComboStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80076A71D462E6200F394CF /* ComboStep.swift */; };
 		E80076AD1D465FA400F394CF /* SalonNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80076AC1D465FA400F394CF /* SalonNetwork.swift */; };
 		E81016EE1D40F83F00600613 /* ChainSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */; };
 		E81016F01D40F85C00600613 /* UTM Alexander.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81016EF1D40F85C00600613 /* UTM Alexander.ttf */; };
@@ -45,6 +44,9 @@
 		E81016F81D41129200600613 /* ListSalonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E81016F71D41129200600613 /* ListSalonView.xib */; };
 		E81016FB1D41132A00600613 /* SalonTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81016F91D41132A00600613 /* SalonTableCell.swift */; };
 		E81016FC1D41132A00600613 /* SalonTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E81016FA1D41132A00600613 /* SalonTableCell.xib */; };
+		E812EA9C1D4777FE0030EFE7 /* ComboNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E812EA9B1D4777FD0030EFE7 /* ComboNetwork.swift */; };
+		E812EA9E1D4785A70030EFE7 /* OtherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E812EA9D1D4785A70030EFE7 /* OtherService.swift */; };
+		E812EAA01D47877A0030EFE7 /* OtherServiceNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E812EA9F1D47877A0030EFE7 /* OtherServiceNetwork.swift */; };
 		E89F8C921D4234D60015931A /* DetailSalonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F8C901D4234D60015931A /* DetailSalonView.swift */; };
 		E89F8C931D4234D60015931A /* DetailSalonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F8C911D4234D60015931A /* DetailSalonView.xib */; };
 		E89F8C971D4240CA0015931A /* OtherServicesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F8C951D4240CA0015931A /* OtherServicesCell.xib */; };
@@ -92,7 +94,6 @@
 		99C4CB311D433F46006BD121 /* SlideNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideNetwork.swift; sourceTree = "<group>"; };
 		E80076A11D462A2300F394CF /* ComboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComboCell.swift; sourceTree = "<group>"; };
 		E80076A51D462A4800F394CF /* ComboCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComboCell.xib; sourceTree = "<group>"; };
-		E80076A71D462E6200F394CF /* ComboStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComboStep.swift; sourceTree = "<group>"; };
 		E80076AC1D465FA400F394CF /* SalonNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonNetwork.swift; sourceTree = "<group>"; };
 		E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainSystemViewController.swift; sourceTree = "<group>"; };
 		E81016EF1D40F85C00600613 /* UTM Alexander.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UTM Alexander.ttf"; path = "30Shine/UTM Alexander.ttf"; sourceTree = "<group>"; };
@@ -102,6 +103,9 @@
 		E81016F71D41129200600613 /* ListSalonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListSalonView.xib; sourceTree = "<group>"; };
 		E81016F91D41132A00600613 /* SalonTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonTableCell.swift; sourceTree = "<group>"; };
 		E81016FA1D41132A00600613 /* SalonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalonTableCell.xib; sourceTree = "<group>"; };
+		E812EA9B1D4777FD0030EFE7 /* ComboNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComboNetwork.swift; sourceTree = "<group>"; };
+		E812EA9D1D4785A70030EFE7 /* OtherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherService.swift; sourceTree = "<group>"; };
+		E812EA9F1D47877A0030EFE7 /* OtherServiceNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherServiceNetwork.swift; sourceTree = "<group>"; };
 		E89F8C901D4234D60015931A /* DetailSalonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSalonView.swift; sourceTree = "<group>"; };
 		E89F8C911D4234D60015931A /* DetailSalonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailSalonView.xib; sourceTree = "<group>"; };
 		E89F8C951D4240CA0015931A /* OtherServicesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherServicesCell.xib; sourceTree = "<group>"; };
@@ -242,12 +246,12 @@
 				E89F8C9A1D4240F60015931A /* ServiceView.xib */,
 				E89F8CA21D4258EE0015931A /* ShineComboView.swift */,
 				E89F8CA41D4258FD0015931A /* ShineComboView.xib */,
+				E80076A11D462A2300F394CF /* ComboCell.swift */,
+				E80076A51D462A4800F394CF /* ComboCell.xib */,
 				9966F84D1D43AF8B00DFE987 /* CustomerHistoryView.swift */,
 				9966F84F1D43AFB500DFE987 /* CustomerHistoryView.xib */,
 				9966F8511D43B09200DFE987 /* CustomerHistoryCell.swift */,
 				9966F8531D43B0C400DFE987 /* CustomerHistoryCell.xib */,
-				E80076A11D462A2300F394CF /* ComboCell.swift */,
-				E80076A51D462A4800F394CF /* ComboCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -303,7 +307,9 @@
 			isa = PBXGroup;
 			children = (
 				E89F8CA81D42695C0015931A /* Combo.swift */,
-				E80076A71D462E6200F394CF /* ComboStep.swift */,
+				E812EA9B1D4777FD0030EFE7 /* ComboNetwork.swift */,
+				E812EA9D1D4785A70030EFE7 /* OtherService.swift */,
+				E812EA9F1D47877A0030EFE7 /* OtherServiceNetwork.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -458,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E812EA9E1D4785A70030EFE7 /* OtherService.swift in Sources */,
 				E81016F41D410FF300600613 /* Salon.swift in Sources */,
 				E89F8C921D4234D60015931A /* DetailSalonView.swift in Sources */,
 				9918F52C1D431EAA00EC7B26 /* JASON+Alamofire.swift in Sources */,
@@ -473,6 +480,7 @@
 				9966F85B1D43C59900DFE987 /* UIColorExtension.swift in Sources */,
 				E89F8C9F1D4257A10015931A /* OtherServicesView.swift in Sources */,
 				E81016FB1D41132A00600613 /* SalonTableCell.swift in Sources */,
+				E812EAA01D47877A0030EFE7 /* OtherServiceNetwork.swift in Sources */,
 				9966F8571D43B77F00DFE987 /* CustomerHistory.swift in Sources */,
 				99BE9DEF1D40799700429478 /* HomeViewController.swift in Sources */,
 				999698EB1D40E1B30021184E /* LazyImage.swift in Sources */,
@@ -489,9 +497,9 @@
 				E81016EE1D40F83F00600613 /* ChainSystemViewController.swift in Sources */,
 				999698E11D40D9DA0021184E /* VideoViewController.swift in Sources */,
 				E89F8CAB1D426C200015931A /* OtherServicesCell.swift in Sources */,
+				E812EA9C1D4777FE0030EFE7 /* ComboNetwork.swift in Sources */,
 				9966F8521D43B09200DFE987 /* CustomerHistoryCell.swift in Sources */,
 				99BE9DF11D40845B00429478 /* MenuCell.swift in Sources */,
-				E80076A81D462E6200F394CF /* ComboStep.swift in Sources */,
 				9918F52A1D431BA800EC7B26 /* DB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

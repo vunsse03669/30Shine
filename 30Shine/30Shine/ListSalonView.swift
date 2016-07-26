@@ -93,9 +93,9 @@ class ListSalonView: UIView, UITableViewDelegate {
                     let salons = json["d"].map(SalonNetwork.init)
                     for salon in salons {
                         
-                        let listImages : List<SalonImage> = List<SalonImage>()
+                        let listImages : List<ImageObject> = List<ImageObject>()
                         for salonIN in salon.images {
-                            let newSalonImage:SalonImage = SalonImage.create(salonIN.url, thumb: salonIN.thumb, title: salonIN.title, img_description: salonIN.img_description)
+                            let newSalonImage:ImageObject = ImageObject.create(salonIN.url, thumb: salonIN.thumb, title: salonIN.title, img_description: salonIN.img_description)
                             listImages.append(newSalonImage)
                         }
                         let newSalon : Salon = Salon.create(salon.ID, name: salon.name, phone: salon.phone, managerName: salon.managerName, fanpage: salon.fanpage, listImages: listImages)

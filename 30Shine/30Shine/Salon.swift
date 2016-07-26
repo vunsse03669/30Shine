@@ -16,9 +16,9 @@ class Salon: Object {
     dynamic var phone        : String = ""
     dynamic var managerName  : String = ""
     dynamic var fanpage      : String = ""
-    var listImages           : List<SalonImage> = List<SalonImage>()
+    var listImages           : List<ImageObject> = List<ImageObject>()
     
-    static func create(id:Int, name:String, phone: String, managerName: String, fanpage:String, listImages : List<SalonImage>) -> Salon{
+    static func create(id:Int, name:String, phone: String, managerName: String, fanpage:String, listImages : List<ImageObject>) -> Salon{
         let salon = Salon()
         salon.ID = id
         salon.name = name
@@ -45,14 +45,14 @@ extension Salon {
         return sDB.realm.objects(Salon)
     }
 }
-class SalonImage : Object{
+class ImageObject : Object{
     dynamic var url         : String = ""
     dynamic var thumb       : String = ""
     dynamic var title       : String = ""
     dynamic var img_description : String = ""
     
-    static func create(url : String, thumb: String, title : String, img_description : String) -> SalonImage{
-        let salonImage = SalonImage()
+    static func create(url : String, thumb: String, title : String, img_description : String) -> ImageObject{
+        let salonImage = ImageObject()
         salonImage.url = url.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
         salonImage.thumb = thumb.stringByReplacingOccurrencesOfString(" ", withString: "%20")

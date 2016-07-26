@@ -32,6 +32,7 @@ extension JSONKeys {
     static let salon_phone =        JSONKey<String>("Phone")
     static let salon_managerName =   JSONKey<String>("ManagerName")
     static let salon_images =       JSONKey<JSON>("Images")
+    static let salon_videos =       JSONKey<JSON>("Videos")   
     static let salon_imageThumb =   JSONKey<String>("thumb")
     static let salon_title =        JSONKey<String>("title")
     static let salon_description =  JSONKey<String>("description")

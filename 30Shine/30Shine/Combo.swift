@@ -7,13 +7,74 @@
 //
 
 import UIKit
+import RealmSwift
 
-class Combo: NSObject {
-    var imageBackgorund : String = ""
-    var textPrice   : String = ""
-
-    init(imageBackgorund: String, textPrice: String) {
-        self.imageBackgorund = imageBackgorund
-        self.textPrice = textPrice
+class Combo: Object {
+    dynamic var ID           : Int = -1
+    dynamic var name         : String = ""
+    dynamic var textTitle   : String = ""
+    var listComboSteps : List<ComboStep> = List<ComboStep>()
+    var listVideos:List<VideoObject> = List<VideoObject>()
+    static func create(id : Int, name: String, listSteps: List<ComboStep>, listVideos:List<VideoObject>)-> Combo{
+        let combo = Combo()
+        combo.ID = id
+        combo.name = name
+        combo.listComboSteps = listSteps
+        combo.listVideos = listVideos
+        return combo
     }
 }
+
+extension Combo {
+    static func createSalon(combo : Combo){
+        try! sDB.realm.write({
+            sDB.realm.add(combo)
+        })
+    }
+    
+    static func getSalonByID( id : Int)->Combo! {
+        let predicate = NSPredicate(format: "ID = %d",id)
+        return sDB.realm.objects(Combo).filter(predicate).first
+    }
+    
+    static func getAllSalon()-> Results<Combo>{
+        return sDB.realm.objects(Combo)
+    }
+}
+
+class ComboStep: Object {
+    
+    dynamic var url         : String = ""
+    dynamic var thumb       : String = ""
+    dynamic var title       : String = ""
+    dynamic var img_description : String = ""
+    
+    static func create(url : String, thumb: String, title : String, img_description : String) -> ComboStep{
+        let comboStep = ComboStep()
+        comboStep.url = url.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        
+        comboStep.thumb = thumb.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        comboStep.title = title
+        comboStep.img_description = img_description
+        return comboStep
+    }
+}
+
+class VideoObject: Object{
+    dynamic var url         : String = ""
+    dynamic var thumb       : String = ""
+    dynamic var title       : String = ""
+    dynamic var img_description : String = ""
+    
+    static func create(url : String, thumb: String, title : String, img_description : String) -> VideoObject{
+        let videoObj = VideoObject()
+        videoObj.url = url.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        
+        videoObj.thumb = thumb.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        videoObj.title = title
+        videoObj.img_description = img_description
+        return videoObj
+    }
+    
+}
+
