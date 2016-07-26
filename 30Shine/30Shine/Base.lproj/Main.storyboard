@@ -62,7 +62,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="232" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="019-9A-lwj">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imag-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="019-9A-lwj">
                                                     <rect key="frame" x="0.0" y="0.0" width="232" height="137"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GX-kY-g2d">
@@ -91,7 +91,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yA2-1h-zvy" customClass="SpringImageView" customModule="Spring">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imag-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="yA2-1h-zvy" customClass="SpringImageView" customModule="Spring">
                                 <rect key="frame" x="8" y="72" width="584" height="120"/>
                             </imageView>
                         </subviews>
@@ -191,7 +191,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eo3-9Z-X1q">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imag-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Eo3-9Z-X1q">
                                                     <rect key="frame" x="352" y="8" width="240" height="81"/>
                                                 </imageView>
                                             </subviews>
@@ -295,7 +295,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="584" height="126"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lui-FU-A7x">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imag-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Lui-FU-A7x">
                                                     <rect key="frame" x="462" y="6" width="114" height="114"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Lui-FU-A7x" secondAttribute="height" multiplier="1:1" id="brz-Ik-xF5"/>
@@ -609,13 +609,13 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcL-qZ-7FE">
                                                 <rect key="frame" x="0.0" y="201" width="480" height="68"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rgu-5z-x0e">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imag-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="rgu-5z-x0e">
                                                         <rect key="frame" x="0.0" y="0.0" width="158" height="68"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4dc-9i-9cw">
-                                                        <rect key="frame" x="328" y="0.0" width="158" height="68"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imag-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4dc-9i-9cw">
+                                                        <rect key="frame" x="328" y="0.0" width="152" height="68"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lIg-aN-X9m">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imag-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="lIg-aN-X9m">
                                                         <rect key="frame" x="164" y="0.0" width="158" height="68"/>
                                                     </imageView>
                                                 </subviews>
@@ -634,7 +634,7 @@
                                                     <constraint firstItem="rgu-5z-x0e" firstAttribute="leading" secondItem="rcL-qZ-7FE" secondAttribute="leading" id="wcn-XT-JhC"/>
                                                 </constraints>
                                             </view>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4RJ-ge-EbK" userLabel="bigImage">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imag-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4RJ-ge-EbK" userLabel="bigImage">
                                                 <rect key="frame" x="0.0" y="0.0" width="480" height="196"/>
                                             </imageView>
                                         </subviews>
@@ -685,7 +685,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="152" height="87"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kLu-gq-zb2">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imag-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kLu-gq-zb2">
                                                             <rect key="frame" x="0.0" y="0.0" width="152" height="87"/>
                                                         </imageView>
                                                     </subviews>
@@ -895,6 +895,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="imag-placeholder" width="1920" height="1080"/>
         <image name="img-home" width="22" height="22"/>
         <image name="img-people" width="66" height="66"/>
     </resources>
