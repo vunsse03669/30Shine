@@ -53,6 +53,7 @@ class HairCollectionViewController: UIViewController {
             self.tbvHairType.deselectRowAtIndexPath(indexPath, animated: false)
             let vc = self.storyboard?.instantiateViewControllerWithIdentifier("DetailHairViewController") as! DetailHairViewController
             vc.menuVar = self.hairTypeVariable
+            vc.index.value = indexPath.row
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
