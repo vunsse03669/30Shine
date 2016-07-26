@@ -38,7 +38,7 @@ extension JSONKeys {
     static let salon_description =  JSONKey<String>("description")
 
     // hair colletion
-    static let images = JSONKey<JSON>("Image")
+    static let images = JSONKey<JSON>("Images")
     static let title = JSONKey<String>("Title")
 
 }
