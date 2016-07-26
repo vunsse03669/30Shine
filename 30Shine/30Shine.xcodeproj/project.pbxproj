@@ -47,6 +47,7 @@
 		E812EA9C1D4777FE0030EFE7 /* ComboNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E812EA9B1D4777FD0030EFE7 /* ComboNetwork.swift */; };
 		E812EA9E1D4785A70030EFE7 /* OtherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E812EA9D1D4785A70030EFE7 /* OtherService.swift */; };
 		E812EAA01D47877A0030EFE7 /* OtherServiceNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E812EA9F1D47877A0030EFE7 /* OtherServiceNetwork.swift */; };
+		E812EAA21D47C5440030EFE7 /* HairCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E812EAA11D47C5440030EFE7 /* HairCollectionViewController.swift */; };
 		E89F8C921D4234D60015931A /* DetailSalonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F8C901D4234D60015931A /* DetailSalonView.swift */; };
 		E89F8C931D4234D60015931A /* DetailSalonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F8C911D4234D60015931A /* DetailSalonView.xib */; };
 		E89F8C971D4240CA0015931A /* OtherServicesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F8C951D4240CA0015931A /* OtherServicesCell.xib */; };
@@ -106,6 +107,7 @@
 		E812EA9B1D4777FD0030EFE7 /* ComboNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComboNetwork.swift; sourceTree = "<group>"; };
 		E812EA9D1D4785A70030EFE7 /* OtherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherService.swift; sourceTree = "<group>"; };
 		E812EA9F1D47877A0030EFE7 /* OtherServiceNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherServiceNetwork.swift; sourceTree = "<group>"; };
+		E812EAA11D47C5440030EFE7 /* HairCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairCollectionViewController.swift; sourceTree = "<group>"; };
 		E89F8C901D4234D60015931A /* DetailSalonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSalonView.swift; sourceTree = "<group>"; };
 		E89F8C911D4234D60015931A /* DetailSalonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailSalonView.xib; sourceTree = "<group>"; };
 		E89F8C951D4240CA0015931A /* OtherServicesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherServicesCell.xib; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		99BE9DEA1D40783700429478 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E812EAA11D47C5440030EFE7 /* HairCollectionViewController.swift */,
 				E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */,
 				99BE9DEE1D40799700429478 /* HomeViewController.swift */,
 				999698E01D40D9DA0021184E /* VideoViewController.swift */,
@@ -490,6 +493,7 @@
 				E89F8CA71D4260BB0015931A /* UIViewExtension.swift in Sources */,
 				99C4CB321D433F46006BD121 /* SlideNetwork.swift in Sources */,
 				E80076AD1D465FA400F394CF /* SalonNetwork.swift in Sources */,
+				E812EAA21D47C5440030EFE7 /* HairCollectionViewController.swift in Sources */,
 				9918F5341D4320B300EC7B26 /* AppConstant.swift in Sources */,
 				E89F8CA91D42695C0015931A /* Combo.swift in Sources */,
 				E89F8CA31D4258EE0015931A /* ShineComboView.swift in Sources */,

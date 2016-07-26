@@ -45,6 +45,7 @@ class ShineComboView: UIView {
             self.lblDescription.text = self.comboObject.listVideos[0].img_description
             self.videoUrl = self.comboObject.listVideos[0].url
             LazyImage.showForImageView(self.imvThumbnail, url: self.getVideoId(self.videoUrl))
+            print("\(self.getVideoId(self.videoUrl))")
         }
     }
     
