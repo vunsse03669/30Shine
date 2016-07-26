@@ -24,6 +24,12 @@
 		999698E51D40DEAA0021184E /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999698E41D40DEAA0021184E /* VideoCell.swift */; };
 		999698E71D40DF9B0021184E /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999698E61D40DF9B0021184E /* Video.swift */; };
 		999698EB1D40E1B30021184E /* LazyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999698EA1D40E1B30021184E /* LazyImage.swift */; };
+		99BACCEA1D4717AB00756141 /* DetailHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BACCE81D4717AB00756141 /* DetailHairViewController.swift */; };
+		99BACCEB1D4717AB00756141 /* HairCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BACCE91D4717AB00756141 /* HairCollectionViewController.swift */; };
+		99BACCEE1D4717C100756141 /* HairTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BACCEC1D4717C100756141 /* HairTypeCell.swift */; };
+		99BACCEF1D4717C100756141 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BACCED1D4717C100756141 /* MenuCollectionViewCell.swift */; };
+		99BACCF31D4717DB00756141 /* HairNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BACCF11D4717DB00756141 /* HairNetwork.swift */; };
+		99BACCF41D4717DB00756141 /* HairType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BACCF21D4717DB00756141 /* HairType.swift */; };
 		99BE9DD91D40760D00429478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BE9DD81D40760D00429478 /* AppDelegate.swift */; };
 		99BE9DDE1D40760D00429478 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BE9DDC1D40760D00429478 /* Main.storyboard */; };
 		99BE9DE01D40760D00429478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BE9DDF1D40760D00429478 /* Assets.xcassets */; };
@@ -80,6 +86,12 @@
 		999698E41D40DEAA0021184E /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		999698E61D40DF9B0021184E /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		999698EA1D40E1B30021184E /* LazyImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyImage.swift; sourceTree = "<group>"; };
+		99BACCE81D4717AB00756141 /* DetailHairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailHairViewController.swift; sourceTree = "<group>"; };
+		99BACCE91D4717AB00756141 /* HairCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairCollectionViewController.swift; sourceTree = "<group>"; };
+		99BACCEC1D4717C100756141 /* HairTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairTypeCell.swift; sourceTree = "<group>"; };
+		99BACCED1D4717C100756141 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		99BACCF11D4717DB00756141 /* HairNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairNetwork.swift; sourceTree = "<group>"; };
+		99BACCF21D4717DB00756141 /* HairType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairType.swift; sourceTree = "<group>"; };
 		99BE9DD51D40760D00429478 /* 30Shine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 30Shine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BE9DD81D40760D00429478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99BE9DDD1D40760D00429478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -175,6 +187,15 @@
 			name = Vendor;
 			sourceTree = "<group>";
 		};
+		99BACCF01D4717CA00756141 /* Hair */ = {
+			isa = PBXGroup;
+			children = (
+				99BACCF11D4717DB00756141 /* HairNetwork.swift */,
+				99BACCF21D4717DB00756141 /* HairType.swift */,
+			);
+			name = Hair;
+			sourceTree = "<group>";
+		};
 		99BE9DCC1D40760D00429478 = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +232,8 @@
 		99BE9DEA1D40783700429478 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				99BACCE81D4717AB00756141 /* DetailHairViewController.swift */,
+				99BACCE91D4717AB00756141 /* HairCollectionViewController.swift */,
 				E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */,
 				99BE9DEE1D40799700429478 /* HomeViewController.swift */,
 				999698E01D40D9DA0021184E /* VideoViewController.swift */,
@@ -222,6 +245,8 @@
 		99BE9DEB1D40784600429478 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				99BACCEC1D4717C100756141 /* HairTypeCell.swift */,
+				99BACCED1D4717C100756141 /* MenuCollectionViewCell.swift */,
 				99BE9DDF1D40760D00429478 /* Assets.xcassets */,
 				99BE9DDC1D40760D00429478 /* Main.storyboard */,
 				99BE9DE11D40760D00429478 /* LaunchScreen.storyboard */,
@@ -255,6 +280,7 @@
 		99BE9DEC1D40784B00429478 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				99BACCF01D4717CA00756141 /* Hair */,
 				9918F52F1D431FBA00EC7B26 /* Home */,
 				9966F8551D43B75C00DFE987 /* History */,
 				E80076A91D465C4E00F394CF /* ChainSystem */,
@@ -473,18 +499,24 @@
 				9966F85B1D43C59900DFE987 /* UIColorExtension.swift in Sources */,
 				E89F8C9F1D4257A10015931A /* OtherServicesView.swift in Sources */,
 				E81016FB1D41132A00600613 /* SalonTableCell.swift in Sources */,
+				99BACCEB1D4717AB00756141 /* HairCollectionViewController.swift in Sources */,
 				9966F8571D43B77F00DFE987 /* CustomerHistory.swift in Sources */,
+				99BACCEF1D4717C100756141 /* MenuCollectionViewCell.swift in Sources */,
+				99BACCF31D4717DB00756141 /* HairNetwork.swift in Sources */,
 				99BE9DEF1D40799700429478 /* HomeViewController.swift in Sources */,
 				999698EB1D40E1B30021184E /* LazyImage.swift in Sources */,
+				99BACCEE1D4717C100756141 /* HairTypeCell.swift in Sources */,
 				E89F8C991D4240E80015931A /* ServiceView.swift in Sources */,
 				99BE9DF31D4084F700429478 /* Menu.swift in Sources */,
 				E81016F21D410F3600600613 /* SalonCell.swift in Sources */,
 				E89F8CA71D4260BB0015931A /* UIViewExtension.swift in Sources */,
+				99BACCF41D4717DB00756141 /* HairType.swift in Sources */,
 				99C4CB321D433F46006BD121 /* SlideNetwork.swift in Sources */,
 				E80076AD1D465FA400F394CF /* SalonNetwork.swift in Sources */,
 				9918F5341D4320B300EC7B26 /* AppConstant.swift in Sources */,
 				E89F8CA91D42695C0015931A /* Combo.swift in Sources */,
 				E89F8CA31D4258EE0015931A /* ShineComboView.swift in Sources */,
+				99BACCEA1D4717AB00756141 /* DetailHairViewController.swift in Sources */,
 				999698E51D40DEAA0021184E /* VideoCell.swift in Sources */,
 				E81016EE1D40F83F00600613 /* ChainSystemViewController.swift in Sources */,
 				999698E11D40D9DA0021184E /* VideoViewController.swift in Sources */,
