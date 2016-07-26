@@ -16,6 +16,8 @@
 		99614FCB1D46053400EBC15F /* HairTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FCA1D46053400EBC15F /* HairTypeCell.swift */; };
 		99614FD01D46067C00EBC15F /* HairNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FCF1D46067C00EBC15F /* HairNetwork.swift */; };
 		99614FD21D4607CA00EBC15F /* HairType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FD11D4607CA00EBC15F /* HairType.swift */; };
+		99614FD41D461E2400EBC15F /* DetailHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FD31D461E2400EBC15F /* DetailHairViewController.swift */; };
+		99614FD61D46234A00EBC15F /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FD51D46234A00EBC15F /* MenuCollectionViewCell.swift */; };
 		9966F84C1D43AB6C00DFE987 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966F84B1D43AB6C00DFE987 /* ProfileViewController.swift */; };
 		9966F84E1D43AF8B00DFE987 /* CustomerHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966F84D1D43AF8B00DFE987 /* CustomerHistoryView.swift */; };
 		9966F8501D43AFB500DFE987 /* CustomerHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9966F84F1D43AFB500DFE987 /* CustomerHistoryView.xib */; };
@@ -72,6 +74,8 @@
 		99614FCA1D46053400EBC15F /* HairTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairTypeCell.swift; sourceTree = "<group>"; };
 		99614FCF1D46067C00EBC15F /* HairNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairNetwork.swift; sourceTree = "<group>"; };
 		99614FD11D4607CA00EBC15F /* HairType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairType.swift; sourceTree = "<group>"; };
+		99614FD31D461E2400EBC15F /* DetailHairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailHairViewController.swift; sourceTree = "<group>"; };
+		99614FD51D46234A00EBC15F /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		9966F84B1D43AB6C00DFE987 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9966F84D1D43AF8B00DFE987 /* CustomerHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerHistoryView.swift; sourceTree = "<group>"; };
 		9966F84F1D43AFB500DFE987 /* CustomerHistoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerHistoryView.xib; sourceTree = "<group>"; };
@@ -220,6 +224,7 @@
 		99BE9DEA1D40783700429478 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				99614FD31D461E2400EBC15F /* DetailHairViewController.swift */,
 				99614FC81D46051100EBC15F /* HairCollectionViewController.swift */,
 				E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */,
 				99BE9DEE1D40799700429478 /* HomeViewController.swift */,
@@ -232,10 +237,11 @@
 		99BE9DEB1D40784600429478 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				99614FCA1D46053400EBC15F /* HairTypeCell.swift */,
 				99BE9DDF1D40760D00429478 /* Assets.xcassets */,
 				99BE9DDC1D40760D00429478 /* Main.storyboard */,
 				99BE9DE11D40760D00429478 /* LaunchScreen.storyboard */,
+				99614FD51D46234A00EBC15F /* MenuCollectionViewCell.swift */,
+				99614FCA1D46053400EBC15F /* HairTypeCell.swift */,
 				99BE9DF01D40845B00429478 /* MenuCell.swift */,
 				999698E41D40DEAA0021184E /* VideoCell.swift */,
 				E81016F11D410F3600600613 /* SalonCell.swift */,
@@ -461,12 +467,14 @@
 				999698EB1D40E1B30021184E /* LazyImage.swift in Sources */,
 				E89F8C991D4240E80015931A /* ServiceView.swift in Sources */,
 				99BE9DF31D4084F700429478 /* Menu.swift in Sources */,
+				99614FD41D461E2400EBC15F /* DetailHairViewController.swift in Sources */,
 				E81016F21D410F3600600613 /* SalonCell.swift in Sources */,
 				E89F8CA71D4260BB0015931A /* UIViewExtension.swift in Sources */,
 				99C4CB321D433F46006BD121 /* SlideNetwork.swift in Sources */,
 				9918F5341D4320B300EC7B26 /* AppConstant.swift in Sources */,
 				E89F8CA91D42695C0015931A /* Combo.swift in Sources */,
 				99614FD01D46067C00EBC15F /* HairNetwork.swift in Sources */,
+				99614FD61D46234A00EBC15F /* MenuCollectionViewCell.swift in Sources */,
 				99614FCB1D46053400EBC15F /* HairTypeCell.swift in Sources */,
 				E89F8CA31D4258EE0015931A /* OtherServicesView.swift in Sources */,
 				999698E51D40DEAA0021184E /* VideoCell.swift in Sources */,

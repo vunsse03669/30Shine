@@ -47,6 +47,14 @@ class HairCollectionViewController: UIViewController {
             cell.lblDescription.text = "\(data.script)"
             LazyImage.showForImageView(cell.imvImage, url: data.images[0].imageUrl)
         }
+        
+        _ = self.tbvHairType.rx_itemSelected.subscribeNext {
+            indexPath in
+            self.tbvHairType.deselectRowAtIndexPath(indexPath, animated: false)
+            let vc = self.storyboard?.instantiateViewControllerWithIdentifier("DetailHairViewController") as! DetailHairViewController
+            vc.menuVar = self.hairTypeVariable
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     //MARK: Dump data
