@@ -12,12 +12,6 @@
 		9918F52E1D431F4600EC7B26 /* JSONKEYsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F52D1D431F4600EC7B26 /* JSONKEYsExtension.swift */; };
 		9918F5311D431FEE00EC7B26 /* MenuNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F5301D431FEE00EC7B26 /* MenuNetwork.swift */; };
 		9918F5341D4320B300EC7B26 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F5331D4320B300EC7B26 /* AppConstant.swift */; };
-		99614FC91D46051100EBC15F /* HairCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FC81D46051100EBC15F /* HairCollectionViewController.swift */; };
-		99614FCB1D46053400EBC15F /* HairTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FCA1D46053400EBC15F /* HairTypeCell.swift */; };
-		99614FD01D46067C00EBC15F /* HairNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FCF1D46067C00EBC15F /* HairNetwork.swift */; };
-		99614FD21D4607CA00EBC15F /* HairType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FD11D4607CA00EBC15F /* HairType.swift */; };
-		99614FD41D461E2400EBC15F /* DetailHairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FD31D461E2400EBC15F /* DetailHairViewController.swift */; };
-		99614FD61D46234A00EBC15F /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99614FD51D46234A00EBC15F /* MenuCollectionViewCell.swift */; };
 		9966F84C1D43AB6C00DFE987 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966F84B1D43AB6C00DFE987 /* ProfileViewController.swift */; };
 		9966F84E1D43AF8B00DFE987 /* CustomerHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9966F84D1D43AF8B00DFE987 /* CustomerHistoryView.swift */; };
 		9966F8501D43AFB500DFE987 /* CustomerHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9966F84F1D43AFB500DFE987 /* CustomerHistoryView.xib */; };
@@ -39,6 +33,10 @@
 		99BE9DF31D4084F700429478 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BE9DF21D4084F700429478 /* Menu.swift */; };
 		99C4CB321D433F46006BD121 /* SlideNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4CB311D433F46006BD121 /* SlideNetwork.swift */; };
 		DBEADA86A5D072CA63EE3FD1 /* Pods_30Shine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838FF4F4FB476EEA698D3134 /* Pods_30Shine.framework */; };
+		E80076A21D462A2300F394CF /* ComboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80076A11D462A2300F394CF /* ComboCell.swift */; };
+		E80076A61D462A4800F394CF /* ComboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E80076A51D462A4800F394CF /* ComboCell.xib */; };
+		E80076A81D462E6200F394CF /* ComboStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80076A71D462E6200F394CF /* ComboStep.swift */; };
+		E80076AD1D465FA400F394CF /* SalonNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80076AC1D465FA400F394CF /* SalonNetwork.swift */; };
 		E81016EE1D40F83F00600613 /* ChainSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */; };
 		E81016F01D40F85C00600613 /* UTM Alexander.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E81016EF1D40F85C00600613 /* UTM Alexander.ttf */; };
 		E81016F21D410F3600600613 /* SalonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81016F11D410F3600600613 /* SalonCell.swift */; };
@@ -49,16 +47,16 @@
 		E81016FC1D41132A00600613 /* SalonTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E81016FA1D41132A00600613 /* SalonTableCell.xib */; };
 		E89F8C921D4234D60015931A /* DetailSalonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F8C901D4234D60015931A /* DetailSalonView.swift */; };
 		E89F8C931D4234D60015931A /* DetailSalonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F8C911D4234D60015931A /* DetailSalonView.xib */; };
-		E89F8C971D4240CA0015931A /* ShineComboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F8C951D4240CA0015931A /* ShineComboCell.xib */; };
+		E89F8C971D4240CA0015931A /* OtherServicesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F8C951D4240CA0015931A /* OtherServicesCell.xib */; };
 		E89F8C991D4240E80015931A /* ServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F8C981D4240E80015931A /* ServiceView.swift */; };
 		E89F8C9B1D4240F60015931A /* ServiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F8C9A1D4240F60015931A /* ServiceView.xib */; };
-		E89F8C9D1D4257920015931A /* ShineComboView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F8C9C1D4257920015931A /* ShineComboView.xib */; };
-		E89F8C9F1D4257A10015931A /* ShineComboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F8C9E1D4257A10015931A /* ShineComboView.swift */; };
-		E89F8CA31D4258EE0015931A /* OtherServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F8CA21D4258EE0015931A /* OtherServicesView.swift */; };
-		E89F8CA51D4258FD0015931A /* OtherServicesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F8CA41D4258FD0015931A /* OtherServicesView.xib */; };
+		E89F8C9D1D4257920015931A /* OtherServicesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F8C9C1D4257920015931A /* OtherServicesView.xib */; };
+		E89F8C9F1D4257A10015931A /* OtherServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F8C9E1D4257A10015931A /* OtherServicesView.swift */; };
+		E89F8CA31D4258EE0015931A /* ShineComboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F8CA21D4258EE0015931A /* ShineComboView.swift */; };
+		E89F8CA51D4258FD0015931A /* ShineComboView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89F8CA41D4258FD0015931A /* ShineComboView.xib */; };
 		E89F8CA71D4260BB0015931A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F8CA61D4260BB0015931A /* UIViewExtension.swift */; };
 		E89F8CA91D42695C0015931A /* Combo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F8CA81D42695C0015931A /* Combo.swift */; };
-		E89F8CAB1D426C200015931A /* ShineComboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F8CAA1D426C200015931A /* ShineComboCell.swift */; };
+		E89F8CAB1D426C200015931A /* OtherServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F8CAA1D426C200015931A /* OtherServicesCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,12 +68,6 @@
 		9918F52D1D431F4600EC7B26 /* JSONKEYsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKEYsExtension.swift; sourceTree = "<group>"; };
 		9918F5301D431FEE00EC7B26 /* MenuNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNetwork.swift; sourceTree = "<group>"; };
 		9918F5331D4320B300EC7B26 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
-		99614FC81D46051100EBC15F /* HairCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairCollectionViewController.swift; sourceTree = "<group>"; };
-		99614FCA1D46053400EBC15F /* HairTypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairTypeCell.swift; sourceTree = "<group>"; };
-		99614FCF1D46067C00EBC15F /* HairNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairNetwork.swift; sourceTree = "<group>"; };
-		99614FD11D4607CA00EBC15F /* HairType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairType.swift; sourceTree = "<group>"; };
-		99614FD31D461E2400EBC15F /* DetailHairViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailHairViewController.swift; sourceTree = "<group>"; };
-		99614FD51D46234A00EBC15F /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		9966F84B1D43AB6C00DFE987 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9966F84D1D43AF8B00DFE987 /* CustomerHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerHistoryView.swift; sourceTree = "<group>"; };
 		9966F84F1D43AFB500DFE987 /* CustomerHistoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerHistoryView.xib; sourceTree = "<group>"; };
@@ -98,6 +90,10 @@
 		99BE9DF01D40845B00429478 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		99BE9DF21D4084F700429478 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		99C4CB311D433F46006BD121 /* SlideNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideNetwork.swift; sourceTree = "<group>"; };
+		E80076A11D462A2300F394CF /* ComboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComboCell.swift; sourceTree = "<group>"; };
+		E80076A51D462A4800F394CF /* ComboCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComboCell.xib; sourceTree = "<group>"; };
+		E80076A71D462E6200F394CF /* ComboStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComboStep.swift; sourceTree = "<group>"; };
+		E80076AC1D465FA400F394CF /* SalonNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonNetwork.swift; sourceTree = "<group>"; };
 		E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainSystemViewController.swift; sourceTree = "<group>"; };
 		E81016EF1D40F85C00600613 /* UTM Alexander.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UTM Alexander.ttf"; path = "30Shine/UTM Alexander.ttf"; sourceTree = "<group>"; };
 		E81016F11D410F3600600613 /* SalonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonCell.swift; sourceTree = "<group>"; };
@@ -108,16 +104,16 @@
 		E81016FA1D41132A00600613 /* SalonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalonTableCell.xib; sourceTree = "<group>"; };
 		E89F8C901D4234D60015931A /* DetailSalonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSalonView.swift; sourceTree = "<group>"; };
 		E89F8C911D4234D60015931A /* DetailSalonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailSalonView.xib; sourceTree = "<group>"; };
-		E89F8C951D4240CA0015931A /* ShineComboCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShineComboCell.xib; sourceTree = "<group>"; };
+		E89F8C951D4240CA0015931A /* OtherServicesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherServicesCell.xib; sourceTree = "<group>"; };
 		E89F8C981D4240E80015931A /* ServiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceView.swift; sourceTree = "<group>"; };
 		E89F8C9A1D4240F60015931A /* ServiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceView.xib; sourceTree = "<group>"; };
-		E89F8C9C1D4257920015931A /* ShineComboView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShineComboView.xib; sourceTree = "<group>"; };
-		E89F8C9E1D4257A10015931A /* ShineComboView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShineComboView.swift; sourceTree = "<group>"; };
-		E89F8CA21D4258EE0015931A /* OtherServicesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherServicesView.swift; sourceTree = "<group>"; };
-		E89F8CA41D4258FD0015931A /* OtherServicesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherServicesView.xib; sourceTree = "<group>"; };
+		E89F8C9C1D4257920015931A /* OtherServicesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherServicesView.xib; sourceTree = "<group>"; };
+		E89F8C9E1D4257A10015931A /* OtherServicesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherServicesView.swift; sourceTree = "<group>"; };
+		E89F8CA21D4258EE0015931A /* ShineComboView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShineComboView.swift; sourceTree = "<group>"; };
+		E89F8CA41D4258FD0015931A /* ShineComboView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShineComboView.xib; sourceTree = "<group>"; };
 		E89F8CA61D4260BB0015931A /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		E89F8CA81D42695C0015931A /* Combo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combo.swift; sourceTree = "<group>"; };
-		E89F8CAA1D426C200015931A /* ShineComboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShineComboCell.swift; sourceTree = "<group>"; };
+		E89F8CAA1D426C200015931A /* OtherServicesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherServicesCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,15 +145,6 @@
 				99C4CB311D433F46006BD121 /* SlideNetwork.swift */,
 			);
 			name = Home;
-			sourceTree = "<group>";
-		};
-		99614FCE1D46059200EBC15F /* HairCollection */ = {
-			isa = PBXGroup;
-			children = (
-				99614FD11D4607CA00EBC15F /* HairType.swift */,
-				99614FCF1D46067C00EBC15F /* HairNetwork.swift */,
-			);
-			name = HairCollection;
 			sourceTree = "<group>";
 		};
 		9966F8551D43B75C00DFE987 /* History */ = {
@@ -224,8 +211,6 @@
 		99BE9DEA1D40783700429478 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				99614FD31D461E2400EBC15F /* DetailHairViewController.swift */,
-				99614FC81D46051100EBC15F /* HairCollectionViewController.swift */,
 				E81016ED1D40F83F00600613 /* ChainSystemViewController.swift */,
 				99BE9DEE1D40799700429478 /* HomeViewController.swift */,
 				999698E01D40D9DA0021184E /* VideoViewController.swift */,
@@ -240,8 +225,6 @@
 				99BE9DDF1D40760D00429478 /* Assets.xcassets */,
 				99BE9DDC1D40760D00429478 /* Main.storyboard */,
 				99BE9DE11D40760D00429478 /* LaunchScreen.storyboard */,
-				99614FD51D46234A00EBC15F /* MenuCollectionViewCell.swift */,
-				99614FCA1D46053400EBC15F /* HairTypeCell.swift */,
 				99BE9DF01D40845B00429478 /* MenuCell.swift */,
 				999698E41D40DEAA0021184E /* VideoCell.swift */,
 				E81016F11D410F3600600613 /* SalonCell.swift */,
@@ -251,18 +234,20 @@
 				E81016FA1D41132A00600613 /* SalonTableCell.xib */,
 				E89F8C901D4234D60015931A /* DetailSalonView.swift */,
 				E89F8C911D4234D60015931A /* DetailSalonView.xib */,
-				E89F8CAA1D426C200015931A /* ShineComboCell.swift */,
-				E89F8C951D4240CA0015931A /* ShineComboCell.xib */,
-				E89F8C9E1D4257A10015931A /* ShineComboView.swift */,
-				E89F8C9C1D4257920015931A /* ShineComboView.xib */,
+				E89F8CAA1D426C200015931A /* OtherServicesCell.swift */,
+				E89F8C951D4240CA0015931A /* OtherServicesCell.xib */,
+				E89F8C9E1D4257A10015931A /* OtherServicesView.swift */,
+				E89F8C9C1D4257920015931A /* OtherServicesView.xib */,
 				E89F8C981D4240E80015931A /* ServiceView.swift */,
 				E89F8C9A1D4240F60015931A /* ServiceView.xib */,
-				E89F8CA21D4258EE0015931A /* OtherServicesView.swift */,
-				E89F8CA41D4258FD0015931A /* OtherServicesView.xib */,
+				E89F8CA21D4258EE0015931A /* ShineComboView.swift */,
+				E89F8CA41D4258FD0015931A /* ShineComboView.xib */,
 				9966F84D1D43AF8B00DFE987 /* CustomerHistoryView.swift */,
 				9966F84F1D43AFB500DFE987 /* CustomerHistoryView.xib */,
 				9966F8511D43B09200DFE987 /* CustomerHistoryCell.swift */,
 				9966F8531D43B0C400DFE987 /* CustomerHistoryCell.xib */,
+				E80076A11D462A2300F394CF /* ComboCell.swift */,
+				E80076A51D462A4800F394CF /* ComboCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -270,12 +255,10 @@
 		99BE9DEC1D40784B00429478 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				99614FCE1D46059200EBC15F /* HairCollection */,
 				9918F52F1D431FBA00EC7B26 /* Home */,
 				9966F8551D43B75C00DFE987 /* History */,
-				E81016F31D410FF300600613 /* Salon.swift */,
+				E80076A91D465C4E00F394CF /* ChainSystem */,
 				999698E61D40DF9B0021184E /* Video.swift */,
-				E89F8CA81D42695C0015931A /* Combo.swift */,
 				9918F5291D431BA800EC7B26 /* DB.swift */,
 			);
 			name = Model;
@@ -296,6 +279,33 @@
 				838FF4F4FB476EEA698D3134 /* Pods_30Shine.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E80076A91D465C4E00F394CF /* ChainSystem */ = {
+			isa = PBXGroup;
+			children = (
+				E80076AB1D465C6F00F394CF /* Services */,
+				E80076AA1D465C6000F394CF /* SalonList */,
+			);
+			name = ChainSystem;
+			sourceTree = "<group>";
+		};
+		E80076AA1D465C6000F394CF /* SalonList */ = {
+			isa = PBXGroup;
+			children = (
+				E81016F31D410FF300600613 /* Salon.swift */,
+				E80076AC1D465FA400F394CF /* SalonNetwork.swift */,
+			);
+			name = SalonList;
+			sourceTree = "<group>";
+		};
+		E80076AB1D465C6F00F394CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E89F8CA81D42695C0015931A /* Combo.swift */,
+				E80076A71D462E6200F394CF /* ComboStep.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +344,7 @@
 				TargetAttributes = {
 					99BE9DD41D40760D00429478 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 56YJ3N6KSG;
+						DevelopmentTeam = YCJNEHP2D6;
 					};
 				};
 			};
@@ -361,11 +371,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E89F8C971D4240CA0015931A /* ShineComboCell.xib in Resources */,
-				E89F8C9D1D4257920015931A /* ShineComboView.xib in Resources */,
+				E89F8C971D4240CA0015931A /* OtherServicesCell.xib in Resources */,
+				E89F8C9D1D4257920015931A /* OtherServicesView.xib in Resources */,
 				E81016F81D41129200600613 /* ListSalonView.xib in Resources */,
 				E89F8C931D4234D60015931A /* DetailSalonView.xib in Resources */,
-				E89F8CA51D4258FD0015931A /* OtherServicesView.xib in Resources */,
+				E89F8CA51D4258FD0015931A /* ShineComboView.xib in Resources */,
 				E81016F01D40F85C00600613 /* UTM Alexander.ttf in Resources */,
 				9966F8541D43B0C400DFE987 /* CustomerHistoryCell.xib in Resources */,
 				E81016FC1D41132A00600613 /* SalonTableCell.xib in Resources */,
@@ -373,6 +383,7 @@
 				99BE9DE31D40760D00429478 /* LaunchScreen.storyboard in Resources */,
 				E89F8C9B1D4240F60015931A /* ServiceView.xib in Resources */,
 				99BE9DE01D40760D00429478 /* Assets.xcassets in Resources */,
+				E80076A61D462A4800F394CF /* ComboCell.xib in Resources */,
 				99BE9DDE1D40760D00429478 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,40 +461,37 @@
 				E81016F41D410FF300600613 /* Salon.swift in Sources */,
 				E89F8C921D4234D60015931A /* DetailSalonView.swift in Sources */,
 				9918F52C1D431EAA00EC7B26 /* JASON+Alamofire.swift in Sources */,
+				E80076A21D462A2300F394CF /* ComboCell.swift in Sources */,
 				9918F5311D431FEE00EC7B26 /* MenuNetwork.swift in Sources */,
 				9918F52E1D431F4600EC7B26 /* JSONKEYsExtension.swift in Sources */,
 				999698E71D40DF9B0021184E /* Video.swift in Sources */,
-				99614FC91D46051100EBC15F /* HairCollectionViewController.swift in Sources */,
 				9966F84C1D43AB6C00DFE987 /* ProfileViewController.swift in Sources */,
 				9966F84E1D43AF8B00DFE987 /* CustomerHistoryView.swift in Sources */,
 				99BE9DD91D40760D00429478 /* AppDelegate.swift in Sources */,
 				E81016F61D41127700600613 /* ListSalonView.swift in Sources */,
 				9966F8591D43BA9900DFE987 /* HistoryNetwork.swift in Sources */,
 				9966F85B1D43C59900DFE987 /* UIColorExtension.swift in Sources */,
-				E89F8C9F1D4257A10015931A /* ShineComboView.swift in Sources */,
+				E89F8C9F1D4257A10015931A /* OtherServicesView.swift in Sources */,
 				E81016FB1D41132A00600613 /* SalonTableCell.swift in Sources */,
 				9966F8571D43B77F00DFE987 /* CustomerHistory.swift in Sources */,
 				99BE9DEF1D40799700429478 /* HomeViewController.swift in Sources */,
 				999698EB1D40E1B30021184E /* LazyImage.swift in Sources */,
 				E89F8C991D4240E80015931A /* ServiceView.swift in Sources */,
 				99BE9DF31D4084F700429478 /* Menu.swift in Sources */,
-				99614FD41D461E2400EBC15F /* DetailHairViewController.swift in Sources */,
 				E81016F21D410F3600600613 /* SalonCell.swift in Sources */,
 				E89F8CA71D4260BB0015931A /* UIViewExtension.swift in Sources */,
 				99C4CB321D433F46006BD121 /* SlideNetwork.swift in Sources */,
+				E80076AD1D465FA400F394CF /* SalonNetwork.swift in Sources */,
 				9918F5341D4320B300EC7B26 /* AppConstant.swift in Sources */,
 				E89F8CA91D42695C0015931A /* Combo.swift in Sources */,
-				99614FD01D46067C00EBC15F /* HairNetwork.swift in Sources */,
-				99614FD61D46234A00EBC15F /* MenuCollectionViewCell.swift in Sources */,
-				99614FCB1D46053400EBC15F /* HairTypeCell.swift in Sources */,
-				E89F8CA31D4258EE0015931A /* OtherServicesView.swift in Sources */,
+				E89F8CA31D4258EE0015931A /* ShineComboView.swift in Sources */,
 				999698E51D40DEAA0021184E /* VideoCell.swift in Sources */,
 				E81016EE1D40F83F00600613 /* ChainSystemViewController.swift in Sources */,
 				999698E11D40D9DA0021184E /* VideoViewController.swift in Sources */,
-				99614FD21D4607CA00EBC15F /* HairType.swift in Sources */,
-				E89F8CAB1D426C200015931A /* ShineComboCell.swift in Sources */,
+				E89F8CAB1D426C200015931A /* OtherServicesCell.swift in Sources */,
 				9966F8521D43B09200DFE987 /* CustomerHistoryCell.swift in Sources */,
 				99BE9DF11D40845B00429478 /* MenuCell.swift in Sources */,
+				E80076A81D462E6200F394CF /* ComboStep.swift in Sources */,
 				9918F52A1D431BA800EC7B26 /* DB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,11 +608,14 @@
 			baseConfigurationReference = 17FAE5D677117CFA7E43D718 /* Pods-30Shine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = 30Shine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "vu.-0Shine";
+				PRODUCT_BUNDLE_IDENTIFIER = trinh.30Shine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -613,11 +624,14 @@
 			baseConfigurationReference = 540C3FE2B4771421D2E71F1C /* Pods-30Shine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = 30Shine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "vu.-0Shine";
+				PRODUCT_BUNDLE_IDENTIFIER = trinh.30Shine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

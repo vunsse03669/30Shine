@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class ShineComboCell: UITableViewCell {
+class OtherServicesCell: UITableViewCell {
 
     @IBOutlet weak var imvBackground: UIImageView!
     @IBOutlet weak var btnPrice: UILabel!

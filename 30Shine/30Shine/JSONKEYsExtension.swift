@@ -25,7 +25,19 @@ extension JSONKeys {
     static let rating = JSONKey<String>("rating")
     static let services = JSONKey<JSON>("services")
     
+
+    //Chain System
+    static let salon_Id      =      JSONKey<String>("Id")
+    static let salon_fanpage =      JSONKey<String>("Fanpage")
+    static let salon_phone =        JSONKey<String>("Phone")
+    static let salon_managerName =   JSONKey<String>("ManagerName")
+    static let salon_images =       JSONKey<JSON>("Images")
+    static let salon_imageThumb =   JSONKey<String>("thumb")
+    static let salon_title =        JSONKey<String>("title")
+    static let salon_description =  JSONKey<String>("description")
+
     // hair colletion
     static let images = JSONKey<JSON>("Image")
     static let title = JSONKey<String>("Title")
+
 }
